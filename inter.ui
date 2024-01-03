@@ -1,0 +1,4439 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>389</width>
+    <height>748</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="minimumSize">
+    <size>
+     <width>350</width>
+     <height>720</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(20, 20, 20);
+color: rgb(210, 210, 210);</string>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_10">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>5</number>
+    </property>
+    <property name="topMargin">
+     <number>5</number>
+    </property>
+    <property name="rightMargin">
+     <number>5</number>
+    </property>
+    <property name="bottomMargin">
+     <number>5</number>
+    </property>
+    <item>
+     <widget class="QFrame" name="Main">
+      <property name="styleSheet">
+       <string notr="true">QSlider::groove:vertical {
+    border-radius: 9px;
+    width: 18px;
+	margin: 0px;
+	background-color: rgb(45, 45, 45);
+}
+QSlider::groove:vertical:hover {
+	background-color: rgb(50, 50, 50);
+}
+QSlider::handle:vertical {
+    background-color: rgb(85, 255, 127);
+    border: none;
+    height: 18px;
+    width: 18px;
+    margin: 0px;
+	border-radius: 9px;
+}
+QSlider::handle:vertical:hover {
+    background-color: rgb(105, 255, 147);
+}
+QSlider::handle:vertical:pressed {
+     background-color: rgb(115, 255, 157);
+}
+QSlider::groove:horizontal {
+    border-radius: 9px;
+    height: 18px;
+	margin: 0px;
+	background-color: rgb(45, 45, 45);
+}
+QSlider::groove:horizontal:hover {
+	background-color: rgb(50, 50, 50);
+}
+QSlider::handle:horizontal {
+    background-color: rgb(85, 255, 127);
+    border: none;
+    height: 18px;
+    width: 18px;
+    margin: 0px;
+	border-radius: 9px;
+}
+QSlider::handle:horizontal:hover {
+    background-color: rgb(105, 255, 147);
+}
+QSlider::handle:horizontal:pressed {
+     background-color: rgb(115, 255, 157);
+}
+
+
+QRadioButton::indicator {
+    border: 3px solid rgb(52, 59, 72);
+	width: 15px;
+	height: 15px;
+	border-radius: 10px;
+    background: rgb(44, 49, 60);
+}
+QRadioButton::indicator:hover {
+    border: 3px solid rgb(58, 66, 81);
+}
+QRadioButton::indicator:checked {
+    background: 3px solid rgb(85, 255, 127);
+	border: 3px solid rgb(52, 59, 72);	
+}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QFrame" name="frametop">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>60</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>60</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(30, 30, 30);
+</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QFrame" name="Icon">
+            <property name="maximumSize">
+             <size>
+              <width>60</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_2">
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="QLabel" name="label">
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(30, 30, 30);
+background-image: url(:/Logos/Logos/LogoAR.png);
+background-position: center;
+background-repeat: no-reperat;
+border: none;</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QFrame" name="frameTItle">
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_3">
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="QLabel" name="label_10">
+               <property name="font">
+                <font>
+                 <family>MS Shell Dlg 2</family>
+                 <pointsize>16</pointsize>
+                 <weight>75</weight>
+                 <italic>false</italic>
+                 <bold>true</bold>
+                 <underline>false</underline>
+                 <strikeout>false</strikeout>
+                 <kerning>true</kerning>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color: rgb(255, 255, 255);</string>
+               </property>
+               <property name="text">
+                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;AR Didactil Tool&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QFrame" name="Buttons">
+            <property name="maximumSize">
+             <size>
+              <width>50</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_3" stretch="0,0">
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="QPushButton" name="btn_minimize">
+               <property name="minimumSize">
+                <size>
+                 <width>16</width>
+                 <height>16</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>17</width>
+                 <height>17</height>
+                </size>
+               </property>
+               <property name="toolTip">
+                <string>Minimize</string>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton {
+	border: none;
+	border-radius: 8px;	
+	background-color: rgb(85, 255, 127);
+}
+QPushButton:hover {	
+	background-color: rgba(85, 255, 127, 150);
+}</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="btn_close">
+               <property name="minimumSize">
+                <size>
+                 <width>16</width>
+                 <height>16</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>17</width>
+                 <height>17</height>
+                </size>
+               </property>
+               <property name="toolTip">
+                <string>Close</string>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton {
+	border: none;
+	border-radius: 8px;		
+	background-color: rgb(255, 0, 0);
+}
+QPushButton:hover {		
+	background-color: rgba(255, 0, 0, 150);
+}</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="content">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(35, 35, 35);
+</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_4">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QFrame" name="frame_left_menu">
+            <property name="minimumSize">
+             <size>
+              <width>60</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>60</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(30, 30, 30);</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_4">
+             <property name="spacing">
+              <number>10</number>
+             </property>
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <item alignment="Qt::AlignTop">
+              <widget class="QFrame" name="frame_top_menus">
+               <property name="frameShape">
+                <enum>QFrame::NoFrame</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout_5">
+                <property name="spacing">
+                 <number>0</number>
+                </property>
+                <property name="leftMargin">
+                 <number>0</number>
+                </property>
+                <property name="topMargin">
+                 <number>0</number>
+                </property>
+                <property name="rightMargin">
+                 <number>0</number>
+                </property>
+                <property name="bottomMargin">
+                 <number>0</number>
+                </property>
+                <item>
+                 <widget class="QPushButton" name="btn_page_1">
+                  <property name="minimumSize">
+                   <size>
+                    <width>0</width>
+                    <height>60</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <weight>75</weight>
+                    <bold>true</bold>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QPushButton {	
+	background-image: url(:/Logos/Logos/LogoU60x60.png);
+	background-position: center;
+    background-repeat: no-repeat;
+	border: none;
+	border-right: 5px solid rgb(50, 50, 50);
+	background-color: rgb(30, 30, 30);
+	text-align: left;
+	padding-left: 45px;
+}
+QPushButton:hover {
+	background-color: rgb(35, 35, 35);
+
+	
+}
+QPushButton:pressed {	
+	background-color: rgb(85, 255, 127);
+
+}</string>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="btn_page_2">
+                  <property name="minimumSize">
+                   <size>
+                    <width>0</width>
+                    <height>60</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <weight>75</weight>
+                    <bold>true</bold>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QPushButton {	
+	
+	background-image: url(:/Logos/Logos/robotarmicon.png);
+	background-image: url(:/Logos/Logos/robotarmicon.png);
+	background-position: center;
+    background-repeat: no-repeat;
+	border: none;
+	border-right: 5px solid rgb(50, 50, 50);
+	background-color: rgb(30, 30, 30);
+	text-align: left;
+	padding-left: 45px;
+}
+QPushButton:hover {
+	background-color: rgb(35, 35, 35);
+
+	
+}
+QPushButton:pressed {	
+	background-color: rgb(85, 255, 127);
+
+}</string>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="btn_page_3">
+                  <property name="minimumSize">
+                   <size>
+                    <width>0</width>
+                    <height>60</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <weight>75</weight>
+                    <bold>true</bold>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QPushButton {	
+	background-image: url(:/Logos/Logos/rotateicon.png);
+	background-position: center;
+    background-repeat: no-repeat;
+	border: none;
+	border-right: 5px solid rgb(50, 50, 50);
+	background-color: rgb(30, 30, 30);
+	text-align: left;
+	padding-left: 45px;
+}
+QPushButton:hover {
+	background-color: rgb(35, 35, 35);
+
+	
+}
+QPushButton:pressed {	
+	background-color: rgb(85, 255, 127);
+
+}</string>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item>
+              <widget class="QFrame" name="frame_20">
+               <property name="frameShape">
+                <enum>QFrame::StyledPanel</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <layout class="QHBoxLayout" name="horizontalLayout_21">
+                <item>
+                 <widget class="QSlider" name="labSlider">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true"/>
+                  </property>
+                  <property name="maximum">
+                   <number>100</number>
+                  </property>
+                  <property name="orientation">
+                   <enum>Qt::Vertical</enum>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item>
+              <widget class="QFrame" name="frame_19">
+               <property name="frameShape">
+                <enum>QFrame::StyledPanel</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <layout class="QHBoxLayout" name="horizontalLayout_20">
+                <item>
+                 <widget class="QSlider" name="labSlider2">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="minimum">
+                   <number>-100</number>
+                  </property>
+                  <property name="maximum">
+                   <number>100</number>
+                  </property>
+                  <property name="orientation">
+                   <enum>Qt::Vertical</enum>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QFrame" name="framePages">
+            <property name="styleSheet">
+             <string notr="true">QToolButton{background-color: rgb(30, 30, 30);
+border-radius:10px;
+color: rgb(255, 255, 255);
+border-top-color: rgb(85, 170, 127);
+}
+
+QToolButton:hover {		
+	background-color: rgb(40, 40, 40);
+}
+
+QToolButton:pressed {	
+	background-color: rgb(85, 255, 127);
+    color: rgb(0,0, 0);
+}
+QTableWidget {	
+   background-color: rgb(35, 35, 35);
+   color: rgb(255, 255, 255);
+	padding: 10px;
+	border-radius: 5px;
+	gridline-color: rgb(44, 49, 60);
+	border-bottom: 1px solid rgb(44, 49, 60);
+}
+QTableWidget::item{
+	border-color: rgb(44, 49, 60);
+	padding-left: 5px;
+	padding-right: 5px;
+	gridline-color: rgb(44, 49, 60);
+}
+QTableWidget::item:selected{
+    background-color: rgb(85, 255, 127);
+    color: rgb(0,0, 0);
+    border-radius: 3px;
+}
+ QScrollBar:vertical {
+	border: none;
+    background: rgb(55, 55, 55);
+    width: 14px;
+    margin: 21px 0 21px 0;
+	border-radius: 0px;
+ }
+ QScrollBar::handle:vertical {	
+	background-color: rgb(85, 255, 127);
+    min-height: 25px;
+	border-radius: 7px
+ }
+ QScrollBar::add-line:vertical {
+     border: none;
+    background: rgb(45, 45, 45);
+     height: 20px;
+	border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+     subcontrol-position: bottom;
+     subcontrol-origin: margin;
+ }
+ QScrollBar::sub-line:vertical {
+	border: none;
+    background: rgb(45, 45, 45);
+     height: 20px;
+	border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+     subcontrol-position: top;
+     subcontrol-origin: margin;
+ }
+ QScrollBar::up-arrow:vertical, QScrollBar::down-arrow:vertical {
+     background: none;
+ }
+ QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+     background: none;
+ }
+
+ QScrollBar:horizontal {
+	border: none;
+    background: rgb(55, 55, 55);
+    height: 14px;
+    margin: 0px 21px 0px 21px;
+	border-radius: 0px;
+ }
+ QScrollBar::handle:horizontal {
+	background-color: rgb(85, 255, 127);
+    min-width: 25px;
+	border-radius: 7px
+ }
+ QScrollBar::add-line:horizontal {
+     border: none;
+    background: rgb(45, 45, 45);
+     width: 20px;
+     border-top-right-radius: 7px;
+     border-bottom-right-radius: 7px;
+     subcontrol-position: right;
+     subcontrol-origin: margin;
+ }
+ QScrollBar::sub-line:horizontal {
+	border: none;
+    background: rgb(45, 45, 45);
+     width: 20px;
+     border-top-left-radius: 7px;
+     border-bottom-left-radius: 7px;
+     subcontrol-position: left;
+     subcontrol-origin: margin;
+ }
+ QScrollBar::left-arrow:horizontal, QScrollBar::right-arrow:horizontal {
+     background: none;
+ }
+
+ QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal {
+     background: none;
+ }
+</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_5">
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="QStackedWidget" name="stackedWidget">
+               <property name="currentIndex">
+                <number>0</number>
+               </property>
+               <widget class="QWidget" name="page">
+                <layout class="QVBoxLayout" name="verticalLayout_7">
+                 <property name="spacing">
+                  <number>0</number>
+                 </property>
+                 <property name="leftMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>0</number>
+                 </property>
+                 <item>
+                  <widget class="QFrame" name="frame_4">
+                   <property name="styleSheet">
+                    <string notr="true">background-color: rgb(35, 35, 35);
+border-radius:10px;</string>
+                   </property>
+                   <property name="frameShape">
+                    <enum>QFrame::StyledPanel</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Raised</enum>
+                   </property>
+                   <layout class="QVBoxLayout" name="verticalLayout_8">
+                    <property name="spacing">
+                     <number>0</number>
+                    </property>
+                    <property name="leftMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="topMargin">
+                     <number>10</number>
+                    </property>
+                    <property name="rightMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="bottomMargin">
+                     <number>10</number>
+                    </property>
+                    <item>
+                     <widget class="QLabel" name="label_11">
+                      <property name="maximumSize">
+                       <size>
+                        <width>16777215</width>
+                        <height>75</height>
+                       </size>
+                      </property>
+                      <property name="font">
+                       <font>
+                        <pointsize>9</pointsize>
+                        <weight>50</weight>
+                        <bold>false</bold>
+                       </font>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">color: rgb(255, 255, 255);</string>
+                      </property>
+                      <property name="text">
+                       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:8pt; font-weight:600;&quot;&gt;Universidad Distrital Fransico Jose De Caldas &lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:8pt; font-weight:600;&quot;&gt;Facultad Tecnologica&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:8pt; font-weight:600;&quot;&gt;Ing. en Control &lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:8pt; font-weight:600;&quot;&gt;&lt;br/&gt;&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QFrame" name="frame_9">
+                      <property name="maximumSize">
+                       <size>
+                        <width>16777215</width>
+                        <height>175</height>
+                       </size>
+                      </property>
+                      <property name="frameShape">
+                       <enum>QFrame::StyledPanel</enum>
+                      </property>
+                      <property name="frameShadow">
+                       <enum>QFrame::Raised</enum>
+                      </property>
+                      <layout class="QHBoxLayout" name="horizontalLayout_12">
+                       <item>
+                        <widget class="QLabel" name="label_logo">
+                         <property name="maximumSize">
+                          <size>
+                           <width>150</width>
+                           <height>150</height>
+                          </size>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">background-image: url(:/Logos/Logos/LogoU.png);</string>
+                         </property>
+                         <property name="text">
+                          <string/>
+                         </property>
+                        </widget>
+                       </item>
+                      </layout>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QLabel" name="label_12">
+                      <property name="font">
+                       <font>
+                        <pointsize>9</pointsize>
+                        <weight>50</weight>
+                        <bold>false</bold>
+                       </font>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">color: rgb(255, 255, 255);</string>
+                      </property>
+                      <property name="text">
+                       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;Herramienta didáctica de Realidad Aumentada &lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;con Python y OpenCV, para la&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;visualización y despiece en 3D &lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;de un brazo robótico&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Gregorio Esteban Suarez Mahecha&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Sebastian Fernando Ruiz Leon&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;V 3.7&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QProgressBar" name="progressBar">
+                      <property name="font">
+                       <font>
+                        <pointsize>11</pointsize>
+                        <weight>75</weight>
+                        <bold>true</bold>
+                       </font>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">QProgressBar {
+background-color: rgb(155, 155, 155);
+border-style: none;
+text-align:center;
+border-radius:3px;
+color: rgb(0, 0, 0);
+}
+
+QProgressBar::chunk {
+border-radius:3px;
+	background-color: qlineargradient(spread:pad, x1:0, y1:0.369, x2:0.977273, y2:0.295, stop:0 rgba(85, 255, 127, 255), stop:1 rgba(31, 181, 194, 255));
+}
+
+</string>
+                      </property>
+                      <property name="value">
+                       <number>24</number>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QLabel" name="labelcarga">
+                      <property name="maximumSize">
+                       <size>
+                        <width>16777215</width>
+                        <height>30</height>
+                       </size>
+                      </property>
+                      <property name="font">
+                       <font>
+                        <family>Segoe UI</family>
+                        <pointsize>35</pointsize>
+                       </font>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">color: rgb(255, 255, 255);</string>
+                      </property>
+                      <property name="text">
+                       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:9pt; font-weight:600; font-style:italic;&quot;&gt;Cargando Modelos...&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                      </property>
+                      <property name="alignment">
+                       <set>Qt::AlignCenter</set>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+               <widget class="QWidget" name="page_1">
+                <layout class="QVBoxLayout" name="verticalLayout">
+                 <property name="spacing">
+                  <number>0</number>
+                 </property>
+                 <property name="leftMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>0</number>
+                 </property>
+                 <item>
+                  <widget class="QFrame" name="frame">
+                   <property name="maximumSize">
+                    <size>
+                     <width>16777215</width>
+                     <height>140</height>
+                    </size>
+                   </property>
+                   <property name="frameShape">
+                    <enum>QFrame::StyledPanel</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Raised</enum>
+                   </property>
+                   <layout class="QHBoxLayout" name="horizontalLayout_7">
+                    <item>
+                     <widget class="QLabel" name="ImgAxis">
+                      <property name="minimumSize">
+                       <size>
+                        <width>41</width>
+                        <height>41</height>
+                       </size>
+                      </property>
+                      <property name="maximumSize">
+                       <size>
+                        <width>41</width>
+                        <height>41</height>
+                       </size>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">background-color: rgb(45, 45, 45);
+border-radius:5px;</string>
+                      </property>
+                      <property name="text">
+                       <string/>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QLabel" name="Img">
+                      <property name="minimumSize">
+                       <size>
+                        <width>132</width>
+                        <height>132</height>
+                       </size>
+                      </property>
+                      <property name="maximumSize">
+                       <size>
+                        <width>132</width>
+                        <height>132</height>
+                       </size>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">background-color: rgb(45, 45, 45);
+border-radius:20px;</string>
+                      </property>
+                      <property name="text">
+                       <string/>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QPushButton" name="ButtOpac">
+                      <property name="minimumSize">
+                       <size>
+                        <width>41</width>
+                        <height>41</height>
+                       </size>
+                      </property>
+                      <property name="maximumSize">
+                       <size>
+                        <width>41</width>
+                        <height>41</height>
+                       </size>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">QPushButton {	  
+	background-color: rgb(170, 0, 0);
+    border-radius:5px;
+}
+QPushButton:checked{
+	background-color: rgb(0, 163, 0);
+}
+QPushButton:enabled {	
+	background-image: url(:/Logos/Logos/OpacityEnable.png);
+	background-position: center;
+    background-repeat: no-repeat;
+}
+QPushButton:disabled {	
+	background-image: url(:/Logos/Logos/OpacityDisabled.png);
+	background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgb(25, 25, 25);
+}
+
+</string>
+                      </property>
+                      <property name="text">
+                       <string/>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QFrame" name="frame_5">
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>110</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>16777215</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="frameShape">
+                    <enum>QFrame::StyledPanel</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Raised</enum>
+                   </property>
+                   <layout class="QHBoxLayout" name="horizontalLayout_8">
+                    <property name="spacing">
+                     <number>0</number>
+                    </property>
+                    <property name="leftMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="topMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="rightMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="bottomMargin">
+                     <number>0</number>
+                    </property>
+                    <item>
+                     <widget class="QLabel" name="ImgA">
+                      <property name="maximumSize">
+                       <size>
+                        <width>100</width>
+                        <height>100</height>
+                       </size>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">background-color: rgb(45, 45, 45);
+border-radius:20px;</string>
+                      </property>
+                      <property name="text">
+                       <string/>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QLabel" name="ImgS">
+                      <property name="maximumSize">
+                       <size>
+                        <width>100</width>
+                        <height>100</height>
+                       </size>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">background-color: rgb(45, 45, 45);
+border-radius:20px;</string>
+                      </property>
+                      <property name="text">
+                       <string/>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QFrame" name="frame_2">
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>0</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>16777215</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="frameShape">
+                    <enum>QFrame::StyledPanel</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Raised</enum>
+                   </property>
+                   <layout class="QVBoxLayout" name="verticalLayout_6">
+                    <property name="spacing">
+                     <number>0</number>
+                    </property>
+                    <property name="leftMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="topMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="rightMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="bottomMargin">
+                     <number>0</number>
+                    </property>
+                    <item>
+                     <widget class="QFrame" name="frame_8">
+                      <property name="maximumSize">
+                       <size>
+                        <width>16777215</width>
+                        <height>40</height>
+                       </size>
+                      </property>
+                      <property name="frameShape">
+                       <enum>QFrame::StyledPanel</enum>
+                      </property>
+                      <property name="frameShadow">
+                       <enum>QFrame::Raised</enum>
+                      </property>
+                      <layout class="QHBoxLayout" name="horizontalLayout_11">
+                       <item>
+                        <widget class="QToolButton" name="Batras">
+                         <property name="minimumSize">
+                          <size>
+                           <width>75</width>
+                           <height>23</height>
+                          </size>
+                         </property>
+                         <property name="font">
+                          <font>
+                           <weight>75</weight>
+                           <bold>true</bold>
+                          </font>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true"/>
+                         </property>
+                         <property name="text">
+                          <string>Anterior</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QToolButton" name="Bnext">
+                         <property name="minimumSize">
+                          <size>
+                           <width>75</width>
+                           <height>23</height>
+                          </size>
+                         </property>
+                         <property name="font">
+                          <font>
+                           <weight>75</weight>
+                           <bold>true</bold>
+                          </font>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true"/>
+                         </property>
+                         <property name="text">
+                          <string>Siguiente</string>
+                         </property>
+                        </widget>
+                       </item>
+                      </layout>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QFrame" name="frame_6">
+                      <property name="maximumSize">
+                       <size>
+                        <width>16777215</width>
+                        <height>40</height>
+                       </size>
+                      </property>
+                      <property name="frameShape">
+                       <enum>QFrame::StyledPanel</enum>
+                      </property>
+                      <property name="frameShadow">
+                       <enum>QFrame::Raised</enum>
+                      </property>
+                      <layout class="QHBoxLayout" name="horizontalLayout_10">
+                       <item>
+                        <widget class="QToolButton" name="rotar">
+                         <property name="minimumSize">
+                          <size>
+                           <width>75</width>
+                           <height>23</height>
+                          </size>
+                         </property>
+                         <property name="font">
+                          <font>
+                           <weight>75</weight>
+                           <bold>true</bold>
+                          </font>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true"/>
+                         </property>
+                         <property name="text">
+                          <string>Rotar</string>
+                         </property>
+                        </widget>
+                       </item>
+                      </layout>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QFrame" name="frame_3">
+                   <property name="frameShape">
+                    <enum>QFrame::StyledPanel</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Raised</enum>
+                   </property>
+                   <layout class="QVBoxLayout" name="verticalLayout_9">
+                    <property name="spacing">
+                     <number>0</number>
+                    </property>
+                    <property name="leftMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="topMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="rightMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="bottomMargin">
+                     <number>0</number>
+                    </property>
+                    <item>
+                     <widget class="QFrame" name="frame_18">
+                      <property name="maximumSize">
+                       <size>
+                        <width>16777215</width>
+                        <height>40</height>
+                       </size>
+                      </property>
+                      <property name="frameShape">
+                       <enum>QFrame::StyledPanel</enum>
+                      </property>
+                      <property name="frameShadow">
+                       <enum>QFrame::Raised</enum>
+                      </property>
+                      <layout class="QHBoxLayout" name="horizontalLayout_9">
+                       <item>
+                        <widget class="QRadioButton" name="radioButton">
+                         <property name="minimumSize">
+                          <size>
+                           <width>150</width>
+                           <height>20</height>
+                          </size>
+                         </property>
+                         <property name="maximumSize">
+                          <size>
+                           <width>125</width>
+                           <height>16777215</height>
+                          </size>
+                         </property>
+                         <property name="font">
+                          <font>
+                           <pointsize>10</pointsize>
+                           <weight>75</weight>
+                           <bold>true</bold>
+                          </font>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">background-color: rgb(45, 45, 45);
+color: rgb(255, 255, 255);
+border-radius: 10px;</string>
+                         </property>
+                         <property name="text">
+                          <string>Camara Auxiliar</string>
+                         </property>
+                        </widget>
+                       </item>
+                      </layout>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QTableWidget" name="tableWidget">
+                      <property name="font">
+                       <font>
+                        <family>MS Shell Dlg 2</family>
+                        <weight>75</weight>
+                        <bold>true</bold>
+                       </font>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true"/>
+                      </property>
+                      <property name="frameShape">
+                       <enum>QFrame::StyledPanel</enum>
+                      </property>
+                      <property name="autoScroll">
+                       <bool>true</bool>
+                      </property>
+                      <property name="editTriggers">
+                       <set>QAbstractItemView::NoEditTriggers</set>
+                      </property>
+                      <property name="selectionBehavior">
+                       <enum>QAbstractItemView::SelectRows</enum>
+                      </property>
+                      <attribute name="horizontalHeaderVisible">
+                       <bool>false</bool>
+                      </attribute>
+                      <attribute name="horizontalHeaderCascadingSectionResizes">
+                       <bool>true</bool>
+                      </attribute>
+                      <attribute name="horizontalHeaderDefaultSectionSize">
+                       <number>140</number>
+                      </attribute>
+                      <attribute name="horizontalHeaderMinimumSectionSize">
+                       <number>39</number>
+                      </attribute>
+                      <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+                       <bool>false</bool>
+                      </attribute>
+                      <attribute name="horizontalHeaderStretchLastSection">
+                       <bool>true</bool>
+                      </attribute>
+                      <attribute name="verticalHeaderVisible">
+                       <bool>false</bool>
+                      </attribute>
+                      <attribute name="verticalHeaderDefaultSectionSize">
+                       <number>30</number>
+                      </attribute>
+                      <attribute name="verticalHeaderHighlightSections">
+                       <bool>false</bool>
+                      </attribute>
+                      <attribute name="verticalHeaderStretchLastSection">
+                       <bool>true</bool>
+                      </attribute>
+                      <row>
+                       <property name="text">
+                        <string>New Row</string>
+                       </property>
+                       <property name="font">
+                        <font>
+                         <weight>75</weight>
+                         <bold>true</bold>
+                        </font>
+                       </property>
+                      </row>
+                      <row>
+                       <property name="text">
+                        <string>New Row</string>
+                       </property>
+                      </row>
+                      <row>
+                       <property name="text">
+                        <string>New Row</string>
+                       </property>
+                      </row>
+                      <row>
+                       <property name="text">
+                        <string>New Row</string>
+                       </property>
+                      </row>
+                      <row>
+                       <property name="text">
+                        <string>New Row</string>
+                       </property>
+                      </row>
+                      <row>
+                       <property name="text">
+                        <string>New Row</string>
+                       </property>
+                      </row>
+                      <row>
+                       <property name="text">
+                        <string>New Row</string>
+                       </property>
+                      </row>
+                      <row>
+                       <property name="text">
+                        <string>New Row</string>
+                       </property>
+                      </row>
+                      <row>
+                       <property name="text">
+                        <string>New Row</string>
+                       </property>
+                      </row>
+                      <row>
+                       <property name="text">
+                        <string>New Row</string>
+                       </property>
+                      </row>
+                      <row>
+                       <property name="text">
+                        <string>New Row</string>
+                       </property>
+                      </row>
+                      <row>
+                       <property name="text">
+                        <string>New Row</string>
+                       </property>
+                      </row>
+                      <row>
+                       <property name="text">
+                        <string>New Row</string>
+                       </property>
+                      </row>
+                      <row>
+                       <property name="text">
+                        <string>New Row</string>
+                       </property>
+                      </row>
+                      <row>
+                       <property name="text">
+                        <string>New Row</string>
+                       </property>
+                      </row>
+                      <row>
+                       <property name="text">
+                        <string>New Row</string>
+                       </property>
+                      </row>
+                      <row>
+                       <property name="text">
+                        <string>New Row</string>
+                       </property>
+                      </row>
+                      <row>
+                       <property name="text">
+                        <string>New Row</string>
+                       </property>
+                      </row>
+                      <row>
+                       <property name="text">
+                        <string>New Row</string>
+                       </property>
+                      </row>
+                      <row>
+                       <property name="text">
+                        <string>New Row</string>
+                       </property>
+                      </row>
+                      <row>
+                       <property name="text">
+                        <string>New Row</string>
+                       </property>
+                      </row>
+                      <row>
+                       <property name="text">
+                        <string>New Row</string>
+                       </property>
+                      </row>
+                      <row>
+                       <property name="text">
+                        <string>New Row</string>
+                       </property>
+                      </row>
+                      <row>
+                       <property name="text">
+                        <string>New Row</string>
+                       </property>
+                      </row>
+                      <row>
+                       <property name="text">
+                        <string>New Row</string>
+                       </property>
+                      </row>
+                      <row>
+                       <property name="text">
+                        <string>New Row</string>
+                       </property>
+                      </row>
+                      <row>
+                       <property name="text">
+                        <string>New Row</string>
+                       </property>
+                      </row>
+                      <row>
+                       <property name="text">
+                        <string>New Row</string>
+                       </property>
+                      </row>
+                      <row>
+                       <property name="text">
+                        <string>New Row</string>
+                       </property>
+                      </row>
+                      <row>
+                       <property name="text">
+                        <string>New Row</string>
+                       </property>
+                      </row>
+                      <row>
+                       <property name="text">
+                        <string>New Row</string>
+                       </property>
+                      </row>
+                      <row>
+                       <property name="text">
+                        <string>New Row</string>
+                       </property>
+                      </row>
+                      <row>
+                       <property name="text">
+                        <string>New Row</string>
+                       </property>
+                      </row>
+                      <row>
+                       <property name="text">
+                        <string>New Row</string>
+                       </property>
+                      </row>
+                      <row>
+                       <property name="text">
+                        <string>New Row</string>
+                       </property>
+                      </row>
+                      <row>
+                       <property name="text">
+                        <string>New Row</string>
+                       </property>
+                      </row>
+                      <row>
+                       <property name="text">
+                        <string>New Row</string>
+                       </property>
+                      </row>
+                      <row>
+                       <property name="text">
+                        <string>New Row</string>
+                       </property>
+                      </row>
+                      <row>
+                       <property name="text">
+                        <string>New Row</string>
+                       </property>
+                      </row>
+                      <row>
+                       <property name="text">
+                        <string>New Row</string>
+                       </property>
+                      </row>
+                      <row>
+                       <property name="text">
+                        <string>New Row</string>
+                       </property>
+                      </row>
+                      <row>
+                       <property name="text">
+                        <string>New Row</string>
+                       </property>
+                      </row>
+                      <row>
+                       <property name="text">
+                        <string>New Row</string>
+                       </property>
+                      </row>
+                      <row>
+                       <property name="text">
+                        <string>New Row</string>
+                       </property>
+                      </row>
+                      <row>
+                       <property name="text">
+                        <string>New Row</string>
+                       </property>
+                      </row>
+                      <row>
+                       <property name="text">
+                        <string>New Row</string>
+                       </property>
+                      </row>
+                      <row>
+                       <property name="text">
+                        <string>New Row</string>
+                       </property>
+                      </row>
+                      <row>
+                       <property name="text">
+                        <string>New Row</string>
+                       </property>
+                      </row>
+                      <row>
+                       <property name="text">
+                        <string>New Row</string>
+                       </property>
+                      </row>
+                      <row>
+                       <property name="text">
+                        <string>New Row</string>
+                       </property>
+                      </row>
+                      <row>
+                       <property name="text">
+                        <string>New Row</string>
+                       </property>
+                      </row>
+                      <row>
+                       <property name="text">
+                        <string>New Row</string>
+                       </property>
+                      </row>
+                      <row>
+                       <property name="text">
+                        <string>New Row</string>
+                       </property>
+                      </row>
+                      <row>
+                       <property name="text">
+                        <string>New Row</string>
+                       </property>
+                      </row>
+                      <row>
+                       <property name="text">
+                        <string>New Row</string>
+                       </property>
+                      </row>
+                      <row>
+                       <property name="text">
+                        <string>New Row</string>
+                       </property>
+                      </row>
+                      <row>
+                       <property name="text">
+                        <string>New Row</string>
+                       </property>
+                      </row>
+                      <row>
+                       <property name="text">
+                        <string>New Row</string>
+                       </property>
+                      </row>
+                      <row>
+                       <property name="text">
+                        <string>New Row</string>
+                       </property>
+                      </row>
+                      <row>
+                       <property name="text">
+                        <string>New Row</string>
+                       </property>
+                      </row>
+                      <row>
+                       <property name="text">
+                        <string>New Row</string>
+                       </property>
+                      </row>
+                      <row>
+                       <property name="text">
+                        <string>New Row</string>
+                       </property>
+                      </row>
+                      <row>
+                       <property name="text">
+                        <string>New Row</string>
+                       </property>
+                      </row>
+                      <row>
+                       <property name="text">
+                        <string>New Row</string>
+                       </property>
+                      </row>
+                      <row>
+                       <property name="text">
+                        <string>New Row</string>
+                       </property>
+                      </row>
+                      <row>
+                       <property name="text">
+                        <string>New Row</string>
+                       </property>
+                      </row>
+                      <row>
+                       <property name="text">
+                        <string>New Row</string>
+                       </property>
+                      </row>
+                      <row>
+                       <property name="text">
+                        <string>New Row</string>
+                       </property>
+                      </row>
+                      <row>
+                       <property name="text">
+                        <string>New Row</string>
+                       </property>
+                      </row>
+                      <row>
+                       <property name="text">
+                        <string>New Row</string>
+                       </property>
+                      </row>
+                      <row>
+                       <property name="text">
+                        <string>New Row</string>
+                       </property>
+                      </row>
+                      <row>
+                       <property name="text">
+                        <string>New Row</string>
+                       </property>
+                      </row>
+                      <row>
+                       <property name="text">
+                        <string>New Row</string>
+                       </property>
+                      </row>
+                      <row>
+                       <property name="text">
+                        <string>New Row</string>
+                       </property>
+                      </row>
+                      <row>
+                       <property name="text">
+                        <string>New Row</string>
+                       </property>
+                      </row>
+                      <row>
+                       <property name="text">
+                        <string>New Row</string>
+                       </property>
+                      </row>
+                      <row>
+                       <property name="text">
+                        <string>New Row</string>
+                       </property>
+                      </row>
+                      <row>
+                       <property name="text">
+                        <string>New Row</string>
+                       </property>
+                      </row>
+                      <row>
+                       <property name="text">
+                        <string>New Row</string>
+                       </property>
+                      </row>
+                      <column>
+                       <property name="text">
+                        <string>Name</string>
+                       </property>
+                      </column>
+                      <column>
+                       <property name="text">
+                        <string>DP</string>
+                       </property>
+                      </column>
+                      <item row="0" column="0">
+                       <property name="text">
+                        <string>BRAZO COMPLETO</string>
+                       </property>
+                       <property name="font">
+                        <font>
+                         <weight>75</weight>
+                         <bold>true</bold>
+                        </font>
+                       </property>
+                       <property name="textAlignment">
+                        <set>AlignCenter</set>
+                       </property>
+                      </item>
+                      <item row="0" column="1">
+                       <property name="text">
+                        <string>KUKA KR 360-2</string>
+                       </property>
+                       <property name="textAlignment">
+                        <set>AlignCenter</set>
+                       </property>
+                      </item>
+                      <item row="1" column="0">
+                       <property name="text">
+                        <string>BASE</string>
+                       </property>
+                       <property name="font">
+                        <font>
+                         <weight>75</weight>
+                         <bold>true</bold>
+                        </font>
+                       </property>
+                       <property name="textAlignment">
+                        <set>AlignCenter</set>
+                       </property>
+                      </item>
+                      <item row="1" column="1">
+                       <property name="text">
+                        <string>Soporte - Conexion al Controlador</string>
+                       </property>
+                       <property name="textAlignment">
+                        <set>AlignCenter</set>
+                       </property>
+                      </item>
+                      <item row="2" column="0">
+                       <property name="text">
+                        <string>EJE 1</string>
+                       </property>
+                       <property name="font">
+                        <font>
+                         <weight>75</weight>
+                         <bold>true</bold>
+                        </font>
+                       </property>
+                       <property name="textAlignment">
+                        <set>AlignCenter</set>
+                       </property>
+                      </item>
+                      <item row="2" column="1">
+                       <property name="text">
+                        <string>±185°</string>
+                       </property>
+                       <property name="textAlignment">
+                        <set>AlignCenter</set>
+                       </property>
+                      </item>
+                      <item row="3" column="0">
+                       <property name="text">
+                        <string>Carcasa (Eje1)</string>
+                       </property>
+                      </item>
+                      <item row="3" column="1">
+                       <property name="text">
+                        <string>IP 65</string>
+                       </property>
+                       <property name="textAlignment">
+                        <set>AlignCenter</set>
+                       </property>
+                      </item>
+                      <item row="4" column="0">
+                       <property name="text">
+                        <string>Transmisión (Eje 1)</string>
+                       </property>
+                      </item>
+                      <item row="4" column="1">
+                       <property name="text">
+                        <string>DOF 1</string>
+                       </property>
+                       <property name="textAlignment">
+                        <set>AlignCenter</set>
+                       </property>
+                      </item>
+                      <item row="5" column="0">
+                       <property name="text">
+                        <string>Motor (Eje 1)</string>
+                       </property>
+                      </item>
+                      <item row="5" column="1">
+                       <property name="text">
+                        <string>Kuka Roboter 69-225-464 6.6kw</string>
+                       </property>
+                       <property name="textAlignment">
+                        <set>AlignCenter</set>
+                       </property>
+                      </item>
+                      <item row="6" column="0">
+                       <property name="text">
+                        <string>Engranaje 1 (Eje 1)</string>
+                       </property>
+                      </item>
+                      <item row="6" column="1">
+                       <property name="text">
+                        <string>Dp=48mm</string>
+                       </property>
+                       <property name="textAlignment">
+                        <set>AlignCenter</set>
+                       </property>
+                      </item>
+                      <item row="7" column="0">
+                       <property name="text">
+                        <string>Engranaje 2 (Eje 1)</string>
+                       </property>
+                      </item>
+                      <item row="7" column="1">
+                       <property name="text">
+                        <string>Dp=120mm</string>
+                       </property>
+                       <property name="textAlignment">
+                        <set>AlignCenter</set>
+                       </property>
+                      </item>
+                      <item row="8" column="0">
+                       <property name="text">
+                        <string>Engranaje 3 (Eje 1)</string>
+                       </property>
+                      </item>
+                      <item row="8" column="1">
+                       <property name="text">
+                        <string>Dp=285mm</string>
+                       </property>
+                       <property name="textAlignment">
+                        <set>AlignCenter</set>
+                       </property>
+                      </item>
+                      <item row="9" column="0">
+                       <property name="text">
+                        <string>Eje 2</string>
+                       </property>
+                       <property name="font">
+                        <font>
+                         <weight>75</weight>
+                         <bold>true</bold>
+                        </font>
+                       </property>
+                       <property name="textAlignment">
+                        <set>AlignCenter</set>
+                       </property>
+                      </item>
+                      <item row="9" column="1">
+                       <property name="text">
+                        <string>+110°/-40°</string>
+                       </property>
+                       <property name="textAlignment">
+                        <set>AlignCenter</set>
+                       </property>
+                      </item>
+                      <item row="10" column="0">
+                       <property name="text">
+                        <string>Carcasa (Eje 2)</string>
+                       </property>
+                      </item>
+                      <item row="10" column="1">
+                       <property name="text">
+                        <string>IP 65</string>
+                       </property>
+                       <property name="textAlignment">
+                        <set>AlignCenter</set>
+                       </property>
+                      </item>
+                      <item row="11" column="0">
+                       <property name="text">
+                        <string>Transmisión (Eje 2)</string>
+                       </property>
+                      </item>
+                      <item row="11" column="1">
+                       <property name="text">
+                        <string>DOF 2</string>
+                       </property>
+                       <property name="textAlignment">
+                        <set>AlignCenter</set>
+                       </property>
+                      </item>
+                      <item row="12" column="0">
+                       <property name="text">
+                        <string>Motor (Eje 2)</string>
+                       </property>
+                      </item>
+                      <item row="12" column="1">
+                       <property name="text">
+                        <string>Kuka Roboter 69-225-464 6.6kw</string>
+                       </property>
+                       <property name="textAlignment">
+                        <set>AlignCenter</set>
+                       </property>
+                      </item>
+                      <item row="13" column="0">
+                       <property name="text">
+                        <string>Carcasa Transmisión (Eje 2)</string>
+                       </property>
+                      </item>
+                      <item row="13" column="1">
+                       <property name="text">
+                        <string>Soporte Ejes</string>
+                       </property>
+                       <property name="textAlignment">
+                        <set>AlignCenter</set>
+                       </property>
+                      </item>
+                      <item row="14" column="0">
+                       <property name="text">
+                        <string>Engranaje 1 (Eje 2)</string>
+                       </property>
+                      </item>
+                      <item row="14" column="1">
+                       <property name="text">
+                        <string>Dp=61mm</string>
+                       </property>
+                       <property name="textAlignment">
+                        <set>AlignCenter</set>
+                       </property>
+                      </item>
+                      <item row="15" column="0">
+                       <property name="text">
+                        <string>Engranaje 2 (Eje 2)</string>
+                       </property>
+                      </item>
+                      <item row="15" column="1">
+                       <property name="text">
+                        <string>Dp=36.75mm</string>
+                       </property>
+                       <property name="textAlignment">
+                        <set>AlignCenter</set>
+                       </property>
+                      </item>
+                      <item row="16" column="0">
+                       <property name="text">
+                        <string>Engranaje 3 (Eje 2)</string>
+                       </property>
+                      </item>
+                      <item row="16" column="1">
+                       <property name="text">
+                        <string>Dp=40mm</string>
+                       </property>
+                       <property name="textAlignment">
+                        <set>AlignCenter</set>
+                       </property>
+                      </item>
+                      <item row="17" column="0">
+                       <property name="text">
+                        <string>Engranaje 4 (Eje 2)</string>
+                       </property>
+                      </item>
+                      <item row="17" column="1">
+                       <property name="text">
+                        <string>Dp=40mm</string>
+                       </property>
+                       <property name="textAlignment">
+                        <set>AlignCenter</set>
+                       </property>
+                      </item>
+                      <item row="18" column="0">
+                       <property name="text">
+                        <string>Engranaje 5 (Eje 2)</string>
+                       </property>
+                      </item>
+                      <item row="18" column="1">
+                       <property name="text">
+                        <string>Dp=31mm</string>
+                       </property>
+                       <property name="textAlignment">
+                        <set>AlignCenter</set>
+                       </property>
+                      </item>
+                      <item row="19" column="0">
+                       <property name="text">
+                        <string>Engranajes 6-7 (Eje 2)</string>
+                       </property>
+                      </item>
+                      <item row="19" column="1">
+                       <property name="text">
+                        <string>Dp1=104mm Dp2=75mm</string>
+                       </property>
+                       <property name="textAlignment">
+                        <set>AlignCenter</set>
+                       </property>
+                      </item>
+                      <item row="20" column="0">
+                       <property name="text">
+                        <string>Engranaje 8 (Eje 2)</string>
+                       </property>
+                      </item>
+                      <item row="20" column="1">
+                       <property name="text">
+                        <string>Dp=225mm</string>
+                       </property>
+                       <property name="textAlignment">
+                        <set>AlignCenter</set>
+                       </property>
+                      </item>
+                      <item row="21" column="0">
+                       <property name="text">
+                        <string>EJE 3</string>
+                       </property>
+                       <property name="font">
+                        <font>
+                         <weight>75</weight>
+                         <bold>true</bold>
+                        </font>
+                       </property>
+                       <property name="textAlignment">
+                        <set>AlignCenter</set>
+                       </property>
+                      </item>
+                      <item row="21" column="1">
+                       <property name="text">
+                        <string>+60°/–184°</string>
+                       </property>
+                       <property name="textAlignment">
+                        <set>AlignCenter</set>
+                       </property>
+                      </item>
+                      <item row="22" column="0">
+                       <property name="text">
+                        <string>Carcasa (Eje 3)</string>
+                       </property>
+                      </item>
+                      <item row="22" column="1">
+                       <property name="text">
+                        <string>IP 65</string>
+                       </property>
+                       <property name="textAlignment">
+                        <set>AlignCenter</set>
+                       </property>
+                      </item>
+                      <item row="23" column="0">
+                       <property name="text">
+                        <string>Transmisión (Eje 3)</string>
+                       </property>
+                      </item>
+                      <item row="23" column="1">
+                       <property name="text">
+                        <string>DOF 3</string>
+                       </property>
+                       <property name="textAlignment">
+                        <set>AlignCenter</set>
+                       </property>
+                      </item>
+                      <item row="24" column="0">
+                       <property name="text">
+                        <string>Motor (Eje 3)</string>
+                       </property>
+                      </item>
+                      <item row="24" column="1">
+                       <property name="text">
+                        <string>Kuka Roboter 69-225-464 6.6kw</string>
+                       </property>
+                       <property name="textAlignment">
+                        <set>AlignCenter</set>
+                       </property>
+                      </item>
+                      <item row="25" column="0">
+                       <property name="text">
+                        <string>Carcasa Transmisión (Eje 3)</string>
+                       </property>
+                      </item>
+                      <item row="25" column="1">
+                       <property name="text">
+                        <string>Soporte Ejes</string>
+                       </property>
+                       <property name="textAlignment">
+                        <set>AlignCenter</set>
+                       </property>
+                      </item>
+                      <item row="26" column="0">
+                       <property name="text">
+                        <string>Engranaje 1 (Eje 3)</string>
+                       </property>
+                      </item>
+                      <item row="26" column="1">
+                       <property name="text">
+                        <string>Dp=27mm</string>
+                       </property>
+                       <property name="textAlignment">
+                        <set>AlignCenter</set>
+                       </property>
+                      </item>
+                      <item row="27" column="0">
+                       <property name="text">
+                        <string>Engranaje 2 (Eje 3)</string>
+                       </property>
+                      </item>
+                      <item row="27" column="1">
+                       <property name="text">
+                        <string>Dp=48mm</string>
+                       </property>
+                       <property name="textAlignment">
+                        <set>AlignCenter</set>
+                       </property>
+                      </item>
+                      <item row="28" column="0">
+                       <property name="text">
+                        <string>Engranaje 3 (Eje 3)</string>
+                       </property>
+                      </item>
+                      <item row="28" column="1">
+                       <property name="text">
+                        <string>Dp=40mm</string>
+                       </property>
+                       <property name="textAlignment">
+                        <set>AlignCenter</set>
+                       </property>
+                      </item>
+                      <item row="29" column="0">
+                       <property name="text">
+                        <string>Engranaje 4 (Eje 3)</string>
+                       </property>
+                      </item>
+                      <item row="29" column="1">
+                       <property name="text">
+                        <string>Dp=40mm</string>
+                       </property>
+                       <property name="textAlignment">
+                        <set>AlignCenter</set>
+                       </property>
+                      </item>
+                      <item row="30" column="0">
+                       <property name="text">
+                        <string>Engranaje 5 (Eje 3)</string>
+                       </property>
+                      </item>
+                      <item row="30" column="1">
+                       <property name="text">
+                        <string>Dp=31mm</string>
+                       </property>
+                       <property name="textAlignment">
+                        <set>AlignCenter</set>
+                       </property>
+                      </item>
+                      <item row="31" column="0">
+                       <property name="text">
+                        <string>Engranaje 6-7 (Eje 3)</string>
+                       </property>
+                      </item>
+                      <item row="31" column="1">
+                       <property name="text">
+                        <string>Dp1=84mm Dp2=105mm</string>
+                       </property>
+                       <property name="textAlignment">
+                        <set>AlignCenter</set>
+                       </property>
+                      </item>
+                      <item row="32" column="0">
+                       <property name="text">
+                        <string>Engranaje 8 (Eje 3)</string>
+                       </property>
+                      </item>
+                      <item row="32" column="1">
+                       <property name="text">
+                        <string>Dp=145mm</string>
+                       </property>
+                       <property name="textAlignment">
+                        <set>AlignCenter</set>
+                       </property>
+                      </item>
+                      <item row="33" column="0">
+                       <property name="text">
+                        <string>Engranaje 9 (Eje 3)</string>
+                       </property>
+                      </item>
+                      <item row="33" column="1">
+                       <property name="text">
+                        <string>Dp=300mm</string>
+                       </property>
+                       <property name="textAlignment">
+                        <set>AlignCenter</set>
+                       </property>
+                      </item>
+                      <item row="34" column="0">
+                       <property name="text">
+                        <string>EJE 4</string>
+                       </property>
+                       <property name="font">
+                        <font>
+                         <weight>75</weight>
+                         <bold>true</bold>
+                        </font>
+                       </property>
+                       <property name="textAlignment">
+                        <set>AlignCenter</set>
+                       </property>
+                      </item>
+                      <item row="34" column="1">
+                       <property name="text">
+                        <string>±350°</string>
+                       </property>
+                       <property name="textAlignment">
+                        <set>AlignCenter</set>
+                       </property>
+                      </item>
+                      <item row="35" column="0">
+                       <property name="text">
+                        <string>Carcasa (Eje 4)</string>
+                       </property>
+                      </item>
+                      <item row="35" column="1">
+                       <property name="text">
+                        <string>IP 65</string>
+                       </property>
+                       <property name="textAlignment">
+                        <set>AlignCenter</set>
+                       </property>
+                      </item>
+                      <item row="36" column="0">
+                       <property name="text">
+                        <string>Transmisión (Eje 4)</string>
+                       </property>
+                      </item>
+                      <item row="36" column="1">
+                       <property name="text">
+                        <string> DOF 4</string>
+                       </property>
+                       <property name="textAlignment">
+                        <set>AlignCenter</set>
+                       </property>
+                      </item>
+                      <item row="37" column="0">
+                       <property name="text">
+                        <string>Motor (Eje 4)</string>
+                       </property>
+                      </item>
+                      <item row="37" column="1">
+                       <property name="text">
+                        <string>Kuka Roboter 69-225-464 3.8kw</string>
+                       </property>
+                       <property name="textAlignment">
+                        <set>AlignCenter</set>
+                       </property>
+                      </item>
+                      <item row="38" column="0">
+                       <property name="text">
+                        <string>Carcasa Transmisión 1 (Eje 4)</string>
+                       </property>
+                      </item>
+                      <item row="38" column="1">
+                       <property name="text">
+                        <string>Soporte Ejes</string>
+                       </property>
+                       <property name="textAlignment">
+                        <set>AlignCenter</set>
+                       </property>
+                      </item>
+                      <item row="39" column="0">
+                       <property name="text">
+                        <string>Carcasa Transmisión 2 (Eje 3)</string>
+                       </property>
+                      </item>
+                      <item row="39" column="1">
+                       <property name="text">
+                        <string>Proteccion de soporte</string>
+                       </property>
+                       <property name="textAlignment">
+                        <set>AlignCenter</set>
+                       </property>
+                      </item>
+                      <item row="40" column="0">
+                       <property name="text">
+                        <string> Eje Motor (Eje 4)</string>
+                       </property>
+                      </item>
+                      <item row="40" column="1">
+                       <property name="text">
+                        <string>Servo acoplamiento con eje</string>
+                       </property>
+                       <property name="textAlignment">
+                        <set>AlignCenter</set>
+                       </property>
+                      </item>
+                      <item row="41" column="0">
+                       <property name="text">
+                        <string>Engranaje 1 (Eje 4)</string>
+                       </property>
+                      </item>
+                      <item row="41" column="1">
+                       <property name="text">
+                        <string>Dp=18mm</string>
+                       </property>
+                       <property name="textAlignment">
+                        <set>AlignCenter</set>
+                       </property>
+                      </item>
+                      <item row="42" column="0">
+                       <property name="text">
+                        <string>Engranaje 2-3 (Eje 4)</string>
+                       </property>
+                      </item>
+                      <item row="42" column="1">
+                       <property name="text">
+                        <string>Dp=80mm Dp=21mm</string>
+                       </property>
+                       <property name="textAlignment">
+                        <set>AlignCenter</set>
+                       </property>
+                      </item>
+                      <item row="43" column="0">
+                       <property name="text">
+                        <string>Engranaje 4 (Eje 4)</string>
+                       </property>
+                      </item>
+                      <item row="43" column="1">
+                       <property name="text">
+                        <string>Dp=120mm</string>
+                       </property>
+                       <property name="textAlignment">
+                        <set>AlignCenter</set>
+                       </property>
+                      </item>
+                      <item row="44" column="0">
+                       <property name="text">
+                        <string>EJE 5</string>
+                       </property>
+                       <property name="font">
+                        <font>
+                         <weight>75</weight>
+                         <bold>true</bold>
+                        </font>
+                       </property>
+                       <property name="textAlignment">
+                        <set>AlignCenter</set>
+                       </property>
+                      </item>
+                      <item row="44" column="1">
+                       <property name="text">
+                        <string>±118° </string>
+                       </property>
+                       <property name="textAlignment">
+                        <set>AlignCenter</set>
+                       </property>
+                      </item>
+                      <item row="45" column="0">
+                       <property name="text">
+                        <string>Carcasa (Eje 5)</string>
+                       </property>
+                      </item>
+                      <item row="45" column="1">
+                       <property name="text">
+                        <string>IP 65</string>
+                       </property>
+                       <property name="textAlignment">
+                        <set>AlignCenter</set>
+                       </property>
+                      </item>
+                      <item row="46" column="0">
+                       <property name="text">
+                        <string>Transmisión (Eje 5)</string>
+                       </property>
+                      </item>
+                      <item row="46" column="1">
+                       <property name="text">
+                        <string> DOF 5</string>
+                       </property>
+                       <property name="textAlignment">
+                        <set>AlignCenter</set>
+                       </property>
+                      </item>
+                      <item row="47" column="0">
+                       <property name="text">
+                        <string>Motor (Eje 5)</string>
+                       </property>
+                      </item>
+                      <item row="47" column="1">
+                       <property name="text">
+                        <string>Kuka Roboter 69-225-464 3.8kw</string>
+                       </property>
+                       <property name="textAlignment">
+                        <set>AlignCenter</set>
+                       </property>
+                      </item>
+                      <item row="48" column="0">
+                       <property name="text">
+                        <string>Carcasa Transmisión (Eje 5)</string>
+                       </property>
+                      </item>
+                      <item row="48" column="1">
+                       <property name="text">
+                        <string>Soporte Ejes</string>
+                       </property>
+                       <property name="textAlignment">
+                        <set>AlignCenter</set>
+                       </property>
+                      </item>
+                      <item row="49" column="0">
+                       <property name="text">
+                        <string> Eje 1 (Eje 5)</string>
+                       </property>
+                      </item>
+                      <item row="49" column="1">
+                       <property name="text">
+                        <string>Servo acoplamiento con eje + cardán</string>
+                       </property>
+                       <property name="textAlignment">
+                        <set>AlignCenter</set>
+                       </property>
+                      </item>
+                      <item row="50" column="0">
+                       <property name="text">
+                        <string> Eje 2 (Eje 5)</string>
+                       </property>
+                      </item>
+                      <item row="50" column="1">
+                       <property name="text">
+                        <string>Cardán+ eje + cardán</string>
+                       </property>
+                       <property name="textAlignment">
+                        <set>AlignCenter</set>
+                       </property>
+                      </item>
+                      <item row="51" column="0">
+                       <property name="text">
+                        <string> Eje 3 (Eje 5)</string>
+                       </property>
+                      </item>
+                      <item row="51" column="1">
+                       <property name="text">
+                        <string>Cardán + acople engranaje 1</string>
+                       </property>
+                       <property name="textAlignment">
+                        <set>AlignCenter</set>
+                       </property>
+                      </item>
+                      <item row="52" column="0">
+                       <property name="text">
+                        <string>Engranaje 1 (Eje 5)</string>
+                       </property>
+                      </item>
+                      <item row="52" column="1">
+                       <property name="text">
+                        <string>Dp=62.5mm</string>
+                       </property>
+                       <property name="textAlignment">
+                        <set>AlignCenter</set>
+                       </property>
+                      </item>
+                      <item row="53" column="0">
+                       <property name="text">
+                        <string>Engranaje 2 (Eje 5)</string>
+                       </property>
+                      </item>
+                      <item row="53" column="1">
+                       <property name="text">
+                        <string>Dp=105mm</string>
+                       </property>
+                       <property name="textAlignment">
+                        <set>AlignCenter</set>
+                       </property>
+                      </item>
+                      <item row="54" column="0">
+                       <property name="text">
+                        <string> Eje 4 (Eje 5)</string>
+                       </property>
+                      </item>
+                      <item row="54" column="1">
+                       <property name="text">
+                        <string>Eje de union engranaje 2 - polea 1</string>
+                       </property>
+                       <property name="textAlignment">
+                        <set>AlignCenter</set>
+                       </property>
+                      </item>
+                      <item row="55" column="0">
+                       <property name="text">
+                        <string>Polea 1 (Eje 5)</string>
+                       </property>
+                      </item>
+                      <item row="55" column="1">
+                       <property name="text">
+                        <string>D=108mm</string>
+                       </property>
+                       <property name="textAlignment">
+                        <set>AlignCenter</set>
+                       </property>
+                      </item>
+                      <item row="56" column="0">
+                       <property name="text">
+                        <string>Polea 2 (Eje 5)</string>
+                       </property>
+                      </item>
+                      <item row="56" column="1">
+                       <property name="text">
+                        <string>D=108mm</string>
+                       </property>
+                       <property name="textAlignment">
+                        <set>AlignCenter</set>
+                       </property>
+                      </item>
+                      <item row="57" column="0">
+                       <property name="text">
+                        <string>Soporte de Correa (Eje 5)</string>
+                       </property>
+                      </item>
+                      <item row="57" column="1">
+                       <property name="text">
+                        <string>Soporte para correa con rodamientos</string>
+                       </property>
+                       <property name="textAlignment">
+                        <set>AlignCenter</set>
+                       </property>
+                      </item>
+                      <item row="58" column="0">
+                       <property name="text">
+                        <string>Correa (Eje 5)</string>
+                       </property>
+                      </item>
+                      <item row="58" column="1">
+                       <property name="text">
+                        <string>Correa Plana</string>
+                       </property>
+                       <property name="textAlignment">
+                        <set>AlignCenter</set>
+                       </property>
+                      </item>
+                      <item row="59" column="0">
+                       <property name="text">
+                        <string>Rodamiento (Eje 5)</string>
+                       </property>
+                      </item>
+                      <item row="59" column="1">
+                       <property name="text">
+                        <string>Rodamientos rígidos de bolas</string>
+                       </property>
+                       <property name="textAlignment">
+                        <set>AlignCenter</set>
+                       </property>
+                      </item>
+                      <item row="60" column="0">
+                       <property name="text">
+                        <string>EJE 6</string>
+                       </property>
+                       <property name="font">
+                        <font>
+                         <weight>75</weight>
+                         <bold>true</bold>
+                        </font>
+                       </property>
+                       <property name="textAlignment">
+                        <set>AlignCenter</set>
+                       </property>
+                      </item>
+                      <item row="60" column="1">
+                       <property name="text">
+                        <string>±350° </string>
+                       </property>
+                       <property name="textAlignment">
+                        <set>AlignCenter</set>
+                       </property>
+                      </item>
+                      <item row="61" column="0">
+                       <property name="text">
+                        <string>Carcasa (Eje 6)</string>
+                       </property>
+                      </item>
+                      <item row="61" column="1">
+                       <property name="text">
+                        <string>IP 65</string>
+                       </property>
+                       <property name="textAlignment">
+                        <set>AlignCenter</set>
+                       </property>
+                      </item>
+                      <item row="62" column="0">
+                       <property name="text">
+                        <string>Transmisión (Eje 6)</string>
+                       </property>
+                      </item>
+                      <item row="62" column="1">
+                       <property name="text">
+                        <string>DOF 6</string>
+                       </property>
+                       <property name="textAlignment">
+                        <set>AlignCenter</set>
+                       </property>
+                      </item>
+                      <item row="63" column="0">
+                       <property name="text">
+                        <string>Motor (Eje 6)</string>
+                       </property>
+                      </item>
+                      <item row="63" column="1">
+                       <property name="text">
+                        <string>Kuka Roboter 69-225-464 3.8kw</string>
+                       </property>
+                       <property name="textAlignment">
+                        <set>AlignCenter</set>
+                       </property>
+                      </item>
+                      <item row="64" column="0">
+                       <property name="text">
+                        <string>Carcasa Transmisión (Eje 6)</string>
+                       </property>
+                      </item>
+                      <item row="64" column="1">
+                       <property name="text">
+                        <string>Soporte Ejes</string>
+                       </property>
+                       <property name="textAlignment">
+                        <set>AlignCenter</set>
+                       </property>
+                      </item>
+                      <item row="65" column="0">
+                       <property name="text">
+                        <string> Eje 1 (Eje 6)</string>
+                       </property>
+                      </item>
+                      <item row="65" column="1">
+                       <property name="text">
+                        <string>Servo acoplamiento con eje + cardán</string>
+                       </property>
+                       <property name="textAlignment">
+                        <set>AlignCenter</set>
+                       </property>
+                      </item>
+                      <item row="66" column="0">
+                       <property name="text">
+                        <string> Eje 2 (Eje 6)</string>
+                       </property>
+                      </item>
+                      <item row="66" column="1">
+                       <property name="text">
+                        <string>Cardán+ eje + cardán</string>
+                       </property>
+                       <property name="textAlignment">
+                        <set>AlignCenter</set>
+                       </property>
+                      </item>
+                      <item row="67" column="0">
+                       <property name="text">
+                        <string> Eje 3 (Eje 6)</string>
+                       </property>
+                      </item>
+                      <item row="67" column="1">
+                       <property name="text">
+                        <string>Cardán + acople engranaje 1</string>
+                       </property>
+                       <property name="textAlignment">
+                        <set>AlignCenter</set>
+                       </property>
+                      </item>
+                      <item row="68" column="0">
+                       <property name="text">
+                        <string>Engranaje 1 (Eje 6)</string>
+                       </property>
+                      </item>
+                      <item row="68" column="1">
+                       <property name="text">
+                        <string>Dp=62.5mm</string>
+                       </property>
+                       <property name="textAlignment">
+                        <set>AlignCenter</set>
+                       </property>
+                      </item>
+                      <item row="69" column="0">
+                       <property name="text">
+                        <string>Engranaje 2 (Eje 6)</string>
+                       </property>
+                      </item>
+                      <item row="69" column="1">
+                       <property name="text">
+                        <string>Dp=105mm</string>
+                       </property>
+                       <property name="textAlignment">
+                        <set>AlignCenter</set>
+                       </property>
+                      </item>
+                      <item row="70" column="0">
+                       <property name="text">
+                        <string> Eje 4 (Eje 6)</string>
+                       </property>
+                      </item>
+                      <item row="70" column="1">
+                       <property name="text">
+                        <string>Eje de union engranaje 2 - polea 1</string>
+                       </property>
+                       <property name="textAlignment">
+                        <set>AlignCenter</set>
+                       </property>
+                      </item>
+                      <item row="71" column="0">
+                       <property name="text">
+                        <string>Polea 1 (Eje 6)</string>
+                       </property>
+                      </item>
+                      <item row="71" column="1">
+                       <property name="text">
+                        <string>D=108mm</string>
+                       </property>
+                       <property name="textAlignment">
+                        <set>AlignCenter</set>
+                       </property>
+                      </item>
+                      <item row="72" column="0">
+                       <property name="text">
+                        <string>Polea 2 (Eje 6)</string>
+                       </property>
+                      </item>
+                      <item row="72" column="1">
+                       <property name="text">
+                        <string>D=108mm</string>
+                       </property>
+                       <property name="textAlignment">
+                        <set>AlignCenter</set>
+                       </property>
+                      </item>
+                      <item row="73" column="0">
+                       <property name="text">
+                        <string>Soporte de Correa (Eje 6)</string>
+                       </property>
+                      </item>
+                      <item row="73" column="1">
+                       <property name="text">
+                        <string>Soporte para correa con rodamientos</string>
+                       </property>
+                       <property name="textAlignment">
+                        <set>AlignCenter</set>
+                       </property>
+                      </item>
+                      <item row="74" column="0">
+                       <property name="text">
+                        <string>Correa (Eje 6)</string>
+                       </property>
+                      </item>
+                      <item row="74" column="1">
+                       <property name="text">
+                        <string>Correa Plana</string>
+                       </property>
+                       <property name="textAlignment">
+                        <set>AlignCenter</set>
+                       </property>
+                      </item>
+                      <item row="75" column="0">
+                       <property name="text">
+                        <string>Engranaje 3 (Eje 6)</string>
+                       </property>
+                      </item>
+                      <item row="75" column="1">
+                       <property name="text">
+                        <string>Dp=62.5mm</string>
+                       </property>
+                       <property name="textAlignment">
+                        <set>AlignCenter</set>
+                       </property>
+                      </item>
+                      <item row="76" column="0">
+                       <property name="text">
+                        <string>Engranaje 4-5 (Eje 6)</string>
+                       </property>
+                      </item>
+                      <item row="76" column="1">
+                       <property name="text">
+                        <string>Dp1=62.5mm Dp2=18mm</string>
+                       </property>
+                       <property name="textAlignment">
+                        <set>AlignCenter</set>
+                       </property>
+                      </item>
+                      <item row="77" column="0">
+                       <property name="text">
+                        <string>Engranaje 6 (Eje 6)</string>
+                       </property>
+                      </item>
+                      <item row="77" column="1">
+                       <property name="text">
+                        <string>Dp=60mm</string>
+                       </property>
+                       <property name="textAlignment">
+                        <set>AlignCenter</set>
+                       </property>
+                      </item>
+                      <item row="78" column="0">
+                       <property name="text">
+                        <string>Engranaje 7 (Eje 6)</string>
+                       </property>
+                      </item>
+                      <item row="78" column="1">
+                       <property name="text">
+                        <string>Dp=138mm</string>
+                       </property>
+                       <property name="textAlignment">
+                        <set>AlignCenter</set>
+                       </property>
+                      </item>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+               <widget class="QWidget" name="page_2">
+                <layout class="QVBoxLayout" name="verticalLayout_11">
+                 <property name="spacing">
+                  <number>0</number>
+                 </property>
+                 <property name="leftMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>0</number>
+                 </property>
+                 <item>
+                  <widget class="QFrame" name="frame_11">
+                   <property name="frameShape">
+                    <enum>QFrame::StyledPanel</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Raised</enum>
+                   </property>
+                   <layout class="QVBoxLayout" name="verticalLayout_12">
+                    <property name="spacing">
+                     <number>0</number>
+                    </property>
+                    <property name="leftMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="topMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="rightMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="bottomMargin">
+                     <number>0</number>
+                    </property>
+                    <item>
+                     <widget class="QScrollArea" name="scrollArea">
+                      <property name="styleSheet">
+                       <string notr="true"/>
+                      </property>
+                      <property name="widgetResizable">
+                       <bool>true</bool>
+                      </property>
+                      <widget class="QWidget" name="scrollAreaWidgetContents_2">
+                       <property name="geometry">
+                        <rect>
+                         <x>0</x>
+                         <y>0</y>
+                         <width>112</width>
+                         <height>940</height>
+                        </rect>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true"/>
+                       </property>
+                       <layout class="QVBoxLayout" name="verticalLayout_13">
+                        <property name="spacing">
+                         <number>0</number>
+                        </property>
+                        <property name="leftMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="topMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="rightMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="bottomMargin">
+                         <number>0</number>
+                        </property>
+                        <item>
+                         <widget class="QFrame" name="frame_10">
+                          <property name="sizePolicy">
+                           <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                           </sizepolicy>
+                          </property>
+                          <property name="minimumSize">
+                           <size>
+                            <width>0</width>
+                            <height>0</height>
+                           </size>
+                          </property>
+                          <property name="maximumSize">
+                           <size>
+                            <width>16777215</width>
+                            <height>40</height>
+                           </size>
+                          </property>
+                          <property name="frameShape">
+                           <enum>QFrame::StyledPanel</enum>
+                          </property>
+                          <property name="frameShadow">
+                           <enum>QFrame::Raised</enum>
+                          </property>
+                          <layout class="QHBoxLayout" name="horizontalLayout_6">
+                           <item>
+                            <widget class="QToolButton" name="BResetAnim">
+                             <property name="sizePolicy">
+                              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                               <horstretch>0</horstretch>
+                               <verstretch>0</verstretch>
+                              </sizepolicy>
+                             </property>
+                             <property name="minimumSize">
+                              <size>
+                               <width>75</width>
+                               <height>23</height>
+                              </size>
+                             </property>
+                             <property name="font">
+                              <font>
+                               <weight>75</weight>
+                               <bold>true</bold>
+                              </font>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true"/>
+                             </property>
+                             <property name="text">
+                              <string>Reset</string>
+                             </property>
+                            </widget>
+                           </item>
+                          </layout>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QFrame" name="frame_12">
+                          <property name="sizePolicy">
+                           <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                           </sizepolicy>
+                          </property>
+                          <property name="minimumSize">
+                           <size>
+                            <width>0</width>
+                            <height>150</height>
+                           </size>
+                          </property>
+                          <property name="frameShape">
+                           <enum>QFrame::StyledPanel</enum>
+                          </property>
+                          <property name="frameShadow">
+                           <enum>QFrame::Raised</enum>
+                          </property>
+                          <layout class="QVBoxLayout" name="verticalLayout_16">
+                           <property name="leftMargin">
+                            <number>10</number>
+                           </property>
+                           <property name="topMargin">
+                            <number>10</number>
+                           </property>
+                           <property name="rightMargin">
+                            <number>10</number>
+                           </property>
+                           <property name="bottomMargin">
+                            <number>10</number>
+                           </property>
+                           <item>
+                            <widget class="QFrame" name="circularProgressBar_Main">
+                             <property name="styleSheet">
+                              <string notr="true">background-color: none;</string>
+                             </property>
+                             <property name="frameShape">
+                              <enum>QFrame::NoFrame</enum>
+                             </property>
+                             <property name="frameShadow">
+                              <enum>QFrame::Raised</enum>
+                             </property>
+                             <layout class="QHBoxLayout" name="horizontalLayout_13">
+                              <property name="spacing">
+                               <number>0</number>
+                              </property>
+                              <property name="leftMargin">
+                               <number>0</number>
+                              </property>
+                              <property name="topMargin">
+                               <number>0</number>
+                              </property>
+                              <property name="rightMargin">
+                               <number>0</number>
+                              </property>
+                              <property name="bottomMargin">
+                               <number>0</number>
+                              </property>
+                              <item>
+                               <widget class="QFrame" name="circularProgress1">
+                                <property name="sizePolicy">
+                                 <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                                  <horstretch>80</horstretch>
+                                  <verstretch>80</verstretch>
+                                 </sizepolicy>
+                                </property>
+                                <property name="minimumSize">
+                                 <size>
+                                  <width>90</width>
+                                  <height>90</height>
+                                 </size>
+                                </property>
+                                <property name="maximumSize">
+                                 <size>
+                                  <width>90</width>
+                                  <height>90</height>
+                                 </size>
+                                </property>
+                                <property name="styleSheet">
+                                 <string notr="true">QFrame{
+	border-radius: 45px;	
+	background-color: qconicalgradient(cx:0.5, cy:0.5, angle:270, stop:0.5 rgba(85,    255, 127, 255), stop:0.499 rgba(255, 255, 255, 255));
+}</string>
+                                </property>
+                                <property name="frameShape">
+                                 <enum>QFrame::NoFrame</enum>
+                                </property>
+                                <property name="frameShadow">
+                                 <enum>QFrame::Raised</enum>
+                                </property>
+                                <layout class="QVBoxLayout" name="verticalLayout_15">
+                                 <property name="leftMargin">
+                                  <number>10</number>
+                                 </property>
+                                 <property name="topMargin">
+                                  <number>10</number>
+                                 </property>
+                                 <property name="rightMargin">
+                                  <number>10</number>
+                                 </property>
+                                 <property name="bottomMargin">
+                                  <number>10</number>
+                                 </property>
+                                 <item>
+                                  <widget class="QFrame" name="circularContainer">
+                                   <property name="minimumSize">
+                                    <size>
+                                     <width>70</width>
+                                     <height>70</height>
+                                    </size>
+                                   </property>
+                                   <property name="maximumSize">
+                                    <size>
+                                     <width>70</width>
+                                     <height>70</height>
+                                    </size>
+                                   </property>
+                                   <property name="baseSize">
+                                    <size>
+                                     <width>0</width>
+                                     <height>0</height>
+                                    </size>
+                                   </property>
+                                   <property name="styleSheet">
+                                    <string notr="true">QFrame{
+	border-radius: 35px;	
+	background-color: rgb(45, 45, 45);
+}</string>
+                                   </property>
+                                   <property name="frameShape">
+                                    <enum>QFrame::StyledPanel</enum>
+                                   </property>
+                                   <property name="frameShadow">
+                                    <enum>QFrame::Raised</enum>
+                                   </property>
+                                   <layout class="QVBoxLayout" name="verticalLayout_14">
+                                    <property name="spacing">
+                                     <number>0</number>
+                                    </property>
+                                    <property name="leftMargin">
+                                     <number>10</number>
+                                    </property>
+                                    <property name="topMargin">
+                                     <number>10</number>
+                                    </property>
+                                    <property name="rightMargin">
+                                     <number>10</number>
+                                    </property>
+                                    <property name="bottomMargin">
+                                     <number>10</number>
+                                    </property>
+                                    <item>
+                                     <widget class="QLabel" name="label_2">
+                                      <property name="font">
+                                       <font>
+                                        <family>MS Shell Dlg 2</family>
+                                        <pointsize>12</pointsize>
+                                        <weight>9</weight>
+                                        <italic>false</italic>
+                                        <bold>false</bold>
+                                       </font>
+                                      </property>
+                                      <property name="styleSheet">
+                                       <string notr="true">font: 75 12pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(255, 255, 255);</string>
+                                      </property>
+                                      <property name="text">
+                                       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;DOF1&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                                      </property>
+                                     </widget>
+                                    </item>
+                                    <item>
+                                     <widget class="QLabel" name="labelPercentage1">
+                                      <property name="font">
+                                       <font>
+                                        <family>Roboto Thin</family>
+                                        <pointsize>68</pointsize>
+                                       </font>
+                                      </property>
+                                      <property name="styleSheet">
+                                       <string notr="true">background-color: none;
+color: #FFFFFF</string>
+                                      </property>
+                                      <property name="text">
+                                       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;0°&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                                      </property>
+                                      <property name="alignment">
+                                       <set>Qt::AlignCenter</set>
+                                      </property>
+                                     </widget>
+                                    </item>
+                                   </layout>
+                                  </widget>
+                                 </item>
+                                </layout>
+                               </widget>
+                              </item>
+                             </layout>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QSlider" name="S1">
+                             <property name="styleSheet">
+                              <string notr="true"/>
+                             </property>
+                             <property name="minimum">
+                              <number>-18500</number>
+                             </property>
+                             <property name="maximum">
+                              <number>18500</number>
+                             </property>
+                             <property name="pageStep">
+                              <number>10</number>
+                             </property>
+                             <property name="orientation">
+                              <enum>Qt::Horizontal</enum>
+                             </property>
+                            </widget>
+                           </item>
+                          </layout>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QFrame" name="frame_13">
+                          <property name="sizePolicy">
+                           <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                           </sizepolicy>
+                          </property>
+                          <property name="minimumSize">
+                           <size>
+                            <width>0</width>
+                            <height>150</height>
+                           </size>
+                          </property>
+                          <property name="frameShape">
+                           <enum>QFrame::StyledPanel</enum>
+                          </property>
+                          <property name="frameShadow">
+                           <enum>QFrame::Raised</enum>
+                          </property>
+                          <layout class="QVBoxLayout" name="verticalLayout_21">
+                           <item>
+                            <widget class="QFrame" name="circularProgressBar_Main_2">
+                             <property name="styleSheet">
+                              <string notr="true">background-color: none;</string>
+                             </property>
+                             <property name="frameShape">
+                              <enum>QFrame::NoFrame</enum>
+                             </property>
+                             <property name="frameShadow">
+                              <enum>QFrame::Raised</enum>
+                             </property>
+                             <layout class="QHBoxLayout" name="horizontalLayout_15">
+                              <property name="spacing">
+                               <number>0</number>
+                              </property>
+                              <property name="leftMargin">
+                               <number>0</number>
+                              </property>
+                              <property name="topMargin">
+                               <number>0</number>
+                              </property>
+                              <property name="rightMargin">
+                               <number>0</number>
+                              </property>
+                              <property name="bottomMargin">
+                               <number>0</number>
+                              </property>
+                              <item>
+                               <widget class="QFrame" name="circularProgress2">
+                                <property name="sizePolicy">
+                                 <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                                  <horstretch>80</horstretch>
+                                  <verstretch>80</verstretch>
+                                 </sizepolicy>
+                                </property>
+                                <property name="minimumSize">
+                                 <size>
+                                  <width>90</width>
+                                  <height>90</height>
+                                 </size>
+                                </property>
+                                <property name="maximumSize">
+                                 <size>
+                                  <width>90</width>
+                                  <height>90</height>
+                                 </size>
+                                </property>
+                                <property name="styleSheet">
+                                 <string notr="true">QFrame{
+	border-radius: 45px;	
+	background-color: qconicalgradient(cx:0.5, cy:0.5, angle:270, stop:0.5 rgba(85,    255, 127, 255), stop:0.499 rgba(255, 255, 255, 255));
+}</string>
+                                </property>
+                                <property name="frameShape">
+                                 <enum>QFrame::NoFrame</enum>
+                                </property>
+                                <property name="frameShadow">
+                                 <enum>QFrame::Raised</enum>
+                                </property>
+                                <layout class="QVBoxLayout" name="verticalLayout_19">
+                                 <property name="leftMargin">
+                                  <number>10</number>
+                                 </property>
+                                 <property name="topMargin">
+                                  <number>10</number>
+                                 </property>
+                                 <property name="rightMargin">
+                                  <number>10</number>
+                                 </property>
+                                 <property name="bottomMargin">
+                                  <number>10</number>
+                                 </property>
+                                 <item>
+                                  <widget class="QFrame" name="circularContainer_3">
+                                   <property name="minimumSize">
+                                    <size>
+                                     <width>70</width>
+                                     <height>70</height>
+                                    </size>
+                                   </property>
+                                   <property name="maximumSize">
+                                    <size>
+                                     <width>70</width>
+                                     <height>70</height>
+                                    </size>
+                                   </property>
+                                   <property name="baseSize">
+                                    <size>
+                                     <width>0</width>
+                                     <height>0</height>
+                                    </size>
+                                   </property>
+                                   <property name="styleSheet">
+                                    <string notr="true">QFrame{
+	border-radius: 35px;	
+	background-color: rgb(45, 45, 45);
+}</string>
+                                   </property>
+                                   <property name="frameShape">
+                                    <enum>QFrame::StyledPanel</enum>
+                                   </property>
+                                   <property name="frameShadow">
+                                    <enum>QFrame::Raised</enum>
+                                   </property>
+                                   <layout class="QVBoxLayout" name="verticalLayout_20">
+                                    <property name="spacing">
+                                     <number>0</number>
+                                    </property>
+                                    <property name="leftMargin">
+                                     <number>10</number>
+                                    </property>
+                                    <property name="topMargin">
+                                     <number>10</number>
+                                    </property>
+                                    <property name="rightMargin">
+                                     <number>10</number>
+                                    </property>
+                                    <property name="bottomMargin">
+                                     <number>10</number>
+                                    </property>
+                                    <item>
+                                     <widget class="QLabel" name="label_5">
+                                      <property name="font">
+                                       <font>
+                                        <family>MS Shell Dlg 2</family>
+                                        <pointsize>12</pointsize>
+                                        <weight>9</weight>
+                                        <italic>false</italic>
+                                        <bold>false</bold>
+                                       </font>
+                                      </property>
+                                      <property name="styleSheet">
+                                       <string notr="true">font: 75 12pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(255, 255, 255);</string>
+                                      </property>
+                                      <property name="text">
+                                       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;DOF2&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                                      </property>
+                                     </widget>
+                                    </item>
+                                    <item>
+                                     <widget class="QLabel" name="labelPercentage2">
+                                      <property name="font">
+                                       <font>
+                                        <family>Roboto Thin</family>
+                                        <pointsize>68</pointsize>
+                                       </font>
+                                      </property>
+                                      <property name="styleSheet">
+                                       <string notr="true">background-color: none;
+color: #FFFFFF</string>
+                                      </property>
+                                      <property name="text">
+                                       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;0°&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                                      </property>
+                                      <property name="alignment">
+                                       <set>Qt::AlignCenter</set>
+                                      </property>
+                                     </widget>
+                                    </item>
+                                   </layout>
+                                  </widget>
+                                 </item>
+                                </layout>
+                               </widget>
+                              </item>
+                             </layout>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QSlider" name="S2">
+                             <property name="styleSheet">
+                              <string notr="true"/>
+                             </property>
+                             <property name="minimum">
+                              <number>-4000</number>
+                             </property>
+                             <property name="maximum">
+                              <number>11000</number>
+                             </property>
+                             <property name="pageStep">
+                              <number>10</number>
+                             </property>
+                             <property name="orientation">
+                              <enum>Qt::Horizontal</enum>
+                             </property>
+                            </widget>
+                           </item>
+                          </layout>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QFrame" name="frame_14">
+                          <property name="sizePolicy">
+                           <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                           </sizepolicy>
+                          </property>
+                          <property name="minimumSize">
+                           <size>
+                            <width>0</width>
+                            <height>150</height>
+                           </size>
+                          </property>
+                          <property name="frameShape">
+                           <enum>QFrame::StyledPanel</enum>
+                          </property>
+                          <property name="frameShadow">
+                           <enum>QFrame::Raised</enum>
+                          </property>
+                          <layout class="QVBoxLayout" name="verticalLayout_24">
+                           <item>
+                            <widget class="QFrame" name="circularProgressBar_Main_3">
+                             <property name="styleSheet">
+                              <string notr="true">background-color: none;</string>
+                             </property>
+                             <property name="frameShape">
+                              <enum>QFrame::NoFrame</enum>
+                             </property>
+                             <property name="frameShadow">
+                              <enum>QFrame::Raised</enum>
+                             </property>
+                             <layout class="QHBoxLayout" name="horizontalLayout_16">
+                              <property name="spacing">
+                               <number>0</number>
+                              </property>
+                              <property name="leftMargin">
+                               <number>0</number>
+                              </property>
+                              <property name="topMargin">
+                               <number>0</number>
+                              </property>
+                              <property name="rightMargin">
+                               <number>0</number>
+                              </property>
+                              <property name="bottomMargin">
+                               <number>0</number>
+                              </property>
+                              <item>
+                               <widget class="QFrame" name="circularProgress3">
+                                <property name="sizePolicy">
+                                 <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                                  <horstretch>80</horstretch>
+                                  <verstretch>80</verstretch>
+                                 </sizepolicy>
+                                </property>
+                                <property name="minimumSize">
+                                 <size>
+                                  <width>90</width>
+                                  <height>90</height>
+                                 </size>
+                                </property>
+                                <property name="maximumSize">
+                                 <size>
+                                  <width>90</width>
+                                  <height>90</height>
+                                 </size>
+                                </property>
+                                <property name="styleSheet">
+                                 <string notr="true">QFrame{
+	border-radius: 45px;	
+	background-color: qconicalgradient(cx:0.5, cy:0.5, angle:270, stop:0.5 rgba(85,    255, 127, 255), stop:0.499 rgba(255, 255, 255, 255));
+}</string>
+                                </property>
+                                <property name="frameShape">
+                                 <enum>QFrame::NoFrame</enum>
+                                </property>
+                                <property name="frameShadow">
+                                 <enum>QFrame::Raised</enum>
+                                </property>
+                                <layout class="QVBoxLayout" name="verticalLayout_22">
+                                 <property name="leftMargin">
+                                  <number>10</number>
+                                 </property>
+                                 <property name="topMargin">
+                                  <number>10</number>
+                                 </property>
+                                 <property name="rightMargin">
+                                  <number>10</number>
+                                 </property>
+                                 <property name="bottomMargin">
+                                  <number>10</number>
+                                 </property>
+                                 <item>
+                                  <widget class="QFrame" name="circularContainer_4">
+                                   <property name="minimumSize">
+                                    <size>
+                                     <width>70</width>
+                                     <height>70</height>
+                                    </size>
+                                   </property>
+                                   <property name="maximumSize">
+                                    <size>
+                                     <width>70</width>
+                                     <height>70</height>
+                                    </size>
+                                   </property>
+                                   <property name="baseSize">
+                                    <size>
+                                     <width>0</width>
+                                     <height>0</height>
+                                    </size>
+                                   </property>
+                                   <property name="styleSheet">
+                                    <string notr="true">QFrame{
+	border-radius: 35px;	
+	background-color: rgb(45, 45, 45);
+}</string>
+                                   </property>
+                                   <property name="frameShape">
+                                    <enum>QFrame::StyledPanel</enum>
+                                   </property>
+                                   <property name="frameShadow">
+                                    <enum>QFrame::Raised</enum>
+                                   </property>
+                                   <layout class="QVBoxLayout" name="verticalLayout_23">
+                                    <property name="spacing">
+                                     <number>0</number>
+                                    </property>
+                                    <property name="leftMargin">
+                                     <number>10</number>
+                                    </property>
+                                    <property name="topMargin">
+                                     <number>10</number>
+                                    </property>
+                                    <property name="rightMargin">
+                                     <number>10</number>
+                                    </property>
+                                    <property name="bottomMargin">
+                                     <number>10</number>
+                                    </property>
+                                    <item>
+                                     <widget class="QLabel" name="label_6">
+                                      <property name="font">
+                                       <font>
+                                        <family>MS Shell Dlg 2</family>
+                                        <pointsize>12</pointsize>
+                                        <weight>9</weight>
+                                        <italic>false</italic>
+                                        <bold>false</bold>
+                                       </font>
+                                      </property>
+                                      <property name="styleSheet">
+                                       <string notr="true">font: 75 12pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(255, 255, 255);</string>
+                                      </property>
+                                      <property name="text">
+                                       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;DOF3&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                                      </property>
+                                     </widget>
+                                    </item>
+                                    <item>
+                                     <widget class="QLabel" name="labelPercentage3">
+                                      <property name="font">
+                                       <font>
+                                        <family>Roboto Thin</family>
+                                        <pointsize>68</pointsize>
+                                       </font>
+                                      </property>
+                                      <property name="styleSheet">
+                                       <string notr="true">background-color: none;
+color: #FFFFFF</string>
+                                      </property>
+                                      <property name="text">
+                                       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;0°&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                                      </property>
+                                      <property name="alignment">
+                                       <set>Qt::AlignCenter</set>
+                                      </property>
+                                     </widget>
+                                    </item>
+                                   </layout>
+                                  </widget>
+                                 </item>
+                                </layout>
+                               </widget>
+                              </item>
+                             </layout>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QSlider" name="S3">
+                             <property name="styleSheet">
+                              <string notr="true"/>
+                             </property>
+                             <property name="minimum">
+                              <number>-18400</number>
+                             </property>
+                             <property name="maximum">
+                              <number>6000</number>
+                             </property>
+                             <property name="pageStep">
+                              <number>10</number>
+                             </property>
+                             <property name="value">
+                              <number>0</number>
+                             </property>
+                             <property name="orientation">
+                              <enum>Qt::Horizontal</enum>
+                             </property>
+                            </widget>
+                           </item>
+                          </layout>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QFrame" name="frame_15">
+                          <property name="sizePolicy">
+                           <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                           </sizepolicy>
+                          </property>
+                          <property name="minimumSize">
+                           <size>
+                            <width>0</width>
+                            <height>150</height>
+                           </size>
+                          </property>
+                          <property name="frameShape">
+                           <enum>QFrame::StyledPanel</enum>
+                          </property>
+                          <property name="frameShadow">
+                           <enum>QFrame::Raised</enum>
+                          </property>
+                          <layout class="QVBoxLayout" name="verticalLayout_27">
+                           <item>
+                            <widget class="QFrame" name="circularProgressBar_Main_4">
+                             <property name="styleSheet">
+                              <string notr="true">background-color: none;</string>
+                             </property>
+                             <property name="frameShape">
+                              <enum>QFrame::NoFrame</enum>
+                             </property>
+                             <property name="frameShadow">
+                              <enum>QFrame::Raised</enum>
+                             </property>
+                             <layout class="QHBoxLayout" name="horizontalLayout_17">
+                              <property name="spacing">
+                               <number>0</number>
+                              </property>
+                              <property name="leftMargin">
+                               <number>0</number>
+                              </property>
+                              <property name="topMargin">
+                               <number>0</number>
+                              </property>
+                              <property name="rightMargin">
+                               <number>0</number>
+                              </property>
+                              <property name="bottomMargin">
+                               <number>0</number>
+                              </property>
+                              <item>
+                               <widget class="QFrame" name="circularProgress4">
+                                <property name="sizePolicy">
+                                 <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                                  <horstretch>80</horstretch>
+                                  <verstretch>80</verstretch>
+                                 </sizepolicy>
+                                </property>
+                                <property name="minimumSize">
+                                 <size>
+                                  <width>90</width>
+                                  <height>90</height>
+                                 </size>
+                                </property>
+                                <property name="maximumSize">
+                                 <size>
+                                  <width>90</width>
+                                  <height>90</height>
+                                 </size>
+                                </property>
+                                <property name="styleSheet">
+                                 <string notr="true">QFrame{
+	border-radius: 45px;	
+	background-color: qconicalgradient(cx:0.5, cy:0.5, angle:270, stop:0.5 rgba(85,    255, 127, 255), stop:0.499 rgba(255, 255, 255, 255));
+}</string>
+                                </property>
+                                <property name="frameShape">
+                                 <enum>QFrame::NoFrame</enum>
+                                </property>
+                                <property name="frameShadow">
+                                 <enum>QFrame::Raised</enum>
+                                </property>
+                                <layout class="QVBoxLayout" name="verticalLayout_25">
+                                 <property name="leftMargin">
+                                  <number>10</number>
+                                 </property>
+                                 <property name="topMargin">
+                                  <number>10</number>
+                                 </property>
+                                 <property name="rightMargin">
+                                  <number>10</number>
+                                 </property>
+                                 <property name="bottomMargin">
+                                  <number>10</number>
+                                 </property>
+                                 <item>
+                                  <widget class="QFrame" name="circularContainer_5">
+                                   <property name="minimumSize">
+                                    <size>
+                                     <width>70</width>
+                                     <height>70</height>
+                                    </size>
+                                   </property>
+                                   <property name="maximumSize">
+                                    <size>
+                                     <width>70</width>
+                                     <height>70</height>
+                                    </size>
+                                   </property>
+                                   <property name="baseSize">
+                                    <size>
+                                     <width>0</width>
+                                     <height>0</height>
+                                    </size>
+                                   </property>
+                                   <property name="styleSheet">
+                                    <string notr="true">QFrame{
+	border-radius: 35px;	
+	background-color: rgb(45, 45, 45);
+}</string>
+                                   </property>
+                                   <property name="frameShape">
+                                    <enum>QFrame::StyledPanel</enum>
+                                   </property>
+                                   <property name="frameShadow">
+                                    <enum>QFrame::Raised</enum>
+                                   </property>
+                                   <layout class="QVBoxLayout" name="verticalLayout_26">
+                                    <property name="spacing">
+                                     <number>0</number>
+                                    </property>
+                                    <property name="leftMargin">
+                                     <number>10</number>
+                                    </property>
+                                    <property name="topMargin">
+                                     <number>10</number>
+                                    </property>
+                                    <property name="rightMargin">
+                                     <number>10</number>
+                                    </property>
+                                    <property name="bottomMargin">
+                                     <number>10</number>
+                                    </property>
+                                    <item>
+                                     <widget class="QLabel" name="label_7">
+                                      <property name="font">
+                                       <font>
+                                        <family>MS Shell Dlg 2</family>
+                                        <pointsize>12</pointsize>
+                                        <weight>9</weight>
+                                        <italic>false</italic>
+                                        <bold>false</bold>
+                                       </font>
+                                      </property>
+                                      <property name="styleSheet">
+                                       <string notr="true">font: 75 12pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(255, 255, 255);</string>
+                                      </property>
+                                      <property name="text">
+                                       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;DOF4&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                                      </property>
+                                     </widget>
+                                    </item>
+                                    <item>
+                                     <widget class="QLabel" name="labelPercentage4">
+                                      <property name="font">
+                                       <font>
+                                        <family>Roboto Thin</family>
+                                        <pointsize>68</pointsize>
+                                       </font>
+                                      </property>
+                                      <property name="styleSheet">
+                                       <string notr="true">background-color: none;
+color: #FFFFFF</string>
+                                      </property>
+                                      <property name="text">
+                                       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;0°&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                                      </property>
+                                      <property name="alignment">
+                                       <set>Qt::AlignCenter</set>
+                                      </property>
+                                     </widget>
+                                    </item>
+                                   </layout>
+                                  </widget>
+                                 </item>
+                                </layout>
+                               </widget>
+                              </item>
+                             </layout>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QSlider" name="S4">
+                             <property name="styleSheet">
+                              <string notr="true"/>
+                             </property>
+                             <property name="minimum">
+                              <number>-35000</number>
+                             </property>
+                             <property name="maximum">
+                              <number>35000</number>
+                             </property>
+                             <property name="pageStep">
+                              <number>10</number>
+                             </property>
+                             <property name="orientation">
+                              <enum>Qt::Horizontal</enum>
+                             </property>
+                            </widget>
+                           </item>
+                          </layout>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QFrame" name="frame_16">
+                          <property name="sizePolicy">
+                           <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                           </sizepolicy>
+                          </property>
+                          <property name="minimumSize">
+                           <size>
+                            <width>0</width>
+                            <height>150</height>
+                           </size>
+                          </property>
+                          <property name="frameShape">
+                           <enum>QFrame::StyledPanel</enum>
+                          </property>
+                          <property name="frameShadow">
+                           <enum>QFrame::Raised</enum>
+                          </property>
+                          <layout class="QVBoxLayout" name="verticalLayout_30">
+                           <item>
+                            <widget class="QFrame" name="circularProgressBar_Main_5">
+                             <property name="styleSheet">
+                              <string notr="true">background-color: none;</string>
+                             </property>
+                             <property name="frameShape">
+                              <enum>QFrame::NoFrame</enum>
+                             </property>
+                             <property name="frameShadow">
+                              <enum>QFrame::Raised</enum>
+                             </property>
+                             <layout class="QHBoxLayout" name="horizontalLayout_18">
+                              <property name="spacing">
+                               <number>0</number>
+                              </property>
+                              <property name="leftMargin">
+                               <number>0</number>
+                              </property>
+                              <property name="topMargin">
+                               <number>0</number>
+                              </property>
+                              <property name="rightMargin">
+                               <number>0</number>
+                              </property>
+                              <property name="bottomMargin">
+                               <number>0</number>
+                              </property>
+                              <item>
+                               <widget class="QFrame" name="circularProgress5">
+                                <property name="sizePolicy">
+                                 <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                                  <horstretch>80</horstretch>
+                                  <verstretch>80</verstretch>
+                                 </sizepolicy>
+                                </property>
+                                <property name="minimumSize">
+                                 <size>
+                                  <width>90</width>
+                                  <height>90</height>
+                                 </size>
+                                </property>
+                                <property name="maximumSize">
+                                 <size>
+                                  <width>90</width>
+                                  <height>90</height>
+                                 </size>
+                                </property>
+                                <property name="styleSheet">
+                                 <string notr="true">QFrame{
+	border-radius: 45px;	
+	background-color: qconicalgradient(cx:0.5, cy:0.5, angle:270, stop:0.5 rgba(85,    255, 127, 255), stop:0.499 rgba(255, 255, 255, 255));
+}</string>
+                                </property>
+                                <property name="frameShape">
+                                 <enum>QFrame::NoFrame</enum>
+                                </property>
+                                <property name="frameShadow">
+                                 <enum>QFrame::Raised</enum>
+                                </property>
+                                <layout class="QVBoxLayout" name="verticalLayout_28">
+                                 <property name="leftMargin">
+                                  <number>10</number>
+                                 </property>
+                                 <property name="topMargin">
+                                  <number>10</number>
+                                 </property>
+                                 <property name="rightMargin">
+                                  <number>10</number>
+                                 </property>
+                                 <property name="bottomMargin">
+                                  <number>10</number>
+                                 </property>
+                                 <item>
+                                  <widget class="QFrame" name="circularContainer_6">
+                                   <property name="minimumSize">
+                                    <size>
+                                     <width>70</width>
+                                     <height>70</height>
+                                    </size>
+                                   </property>
+                                   <property name="maximumSize">
+                                    <size>
+                                     <width>70</width>
+                                     <height>70</height>
+                                    </size>
+                                   </property>
+                                   <property name="baseSize">
+                                    <size>
+                                     <width>0</width>
+                                     <height>0</height>
+                                    </size>
+                                   </property>
+                                   <property name="styleSheet">
+                                    <string notr="true">QFrame{
+	border-radius: 35px;	
+	background-color: rgb(45, 45, 45);
+}</string>
+                                   </property>
+                                   <property name="frameShape">
+                                    <enum>QFrame::StyledPanel</enum>
+                                   </property>
+                                   <property name="frameShadow">
+                                    <enum>QFrame::Raised</enum>
+                                   </property>
+                                   <layout class="QVBoxLayout" name="verticalLayout_29">
+                                    <property name="spacing">
+                                     <number>0</number>
+                                    </property>
+                                    <property name="leftMargin">
+                                     <number>10</number>
+                                    </property>
+                                    <property name="topMargin">
+                                     <number>10</number>
+                                    </property>
+                                    <property name="rightMargin">
+                                     <number>10</number>
+                                    </property>
+                                    <property name="bottomMargin">
+                                     <number>10</number>
+                                    </property>
+                                    <item>
+                                     <widget class="QLabel" name="label_8">
+                                      <property name="font">
+                                       <font>
+                                        <family>MS Shell Dlg 2</family>
+                                        <pointsize>12</pointsize>
+                                        <weight>9</weight>
+                                        <italic>false</italic>
+                                        <bold>false</bold>
+                                       </font>
+                                      </property>
+                                      <property name="styleSheet">
+                                       <string notr="true">font: 75 12pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(255, 255, 255);</string>
+                                      </property>
+                                      <property name="text">
+                                       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;DOF5&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                                      </property>
+                                     </widget>
+                                    </item>
+                                    <item>
+                                     <widget class="QLabel" name="labelPercentage5">
+                                      <property name="font">
+                                       <font>
+                                        <family>Roboto Thin</family>
+                                        <pointsize>68</pointsize>
+                                       </font>
+                                      </property>
+                                      <property name="styleSheet">
+                                       <string notr="true">background-color: none;
+color: #FFFFFF</string>
+                                      </property>
+                                      <property name="text">
+                                       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;0°&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                                      </property>
+                                      <property name="alignment">
+                                       <set>Qt::AlignCenter</set>
+                                      </property>
+                                     </widget>
+                                    </item>
+                                   </layout>
+                                  </widget>
+                                 </item>
+                                </layout>
+                               </widget>
+                              </item>
+                             </layout>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QSlider" name="S5">
+                             <property name="styleSheet">
+                              <string notr="true"/>
+                             </property>
+                             <property name="minimum">
+                              <number>-11800</number>
+                             </property>
+                             <property name="maximum">
+                              <number>11800</number>
+                             </property>
+                             <property name="pageStep">
+                              <number>10</number>
+                             </property>
+                             <property name="orientation">
+                              <enum>Qt::Horizontal</enum>
+                             </property>
+                            </widget>
+                           </item>
+                          </layout>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QFrame" name="frame_17">
+                          <property name="sizePolicy">
+                           <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                           </sizepolicy>
+                          </property>
+                          <property name="minimumSize">
+                           <size>
+                            <width>0</width>
+                            <height>150</height>
+                           </size>
+                          </property>
+                          <property name="frameShape">
+                           <enum>QFrame::StyledPanel</enum>
+                          </property>
+                          <property name="frameShadow">
+                           <enum>QFrame::Raised</enum>
+                          </property>
+                          <layout class="QVBoxLayout" name="verticalLayout_33">
+                           <item>
+                            <widget class="QFrame" name="circularProgressBar_Main_6">
+                             <property name="styleSheet">
+                              <string notr="true">background-color: none;</string>
+                             </property>
+                             <property name="frameShape">
+                              <enum>QFrame::NoFrame</enum>
+                             </property>
+                             <property name="frameShadow">
+                              <enum>QFrame::Raised</enum>
+                             </property>
+                             <layout class="QHBoxLayout" name="horizontalLayout_19">
+                              <property name="spacing">
+                               <number>0</number>
+                              </property>
+                              <property name="leftMargin">
+                               <number>0</number>
+                              </property>
+                              <property name="topMargin">
+                               <number>0</number>
+                              </property>
+                              <property name="rightMargin">
+                               <number>0</number>
+                              </property>
+                              <property name="bottomMargin">
+                               <number>0</number>
+                              </property>
+                              <item>
+                               <widget class="QFrame" name="circularProgress6">
+                                <property name="sizePolicy">
+                                 <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                                  <horstretch>80</horstretch>
+                                  <verstretch>80</verstretch>
+                                 </sizepolicy>
+                                </property>
+                                <property name="minimumSize">
+                                 <size>
+                                  <width>90</width>
+                                  <height>90</height>
+                                 </size>
+                                </property>
+                                <property name="maximumSize">
+                                 <size>
+                                  <width>90</width>
+                                  <height>90</height>
+                                 </size>
+                                </property>
+                                <property name="styleSheet">
+                                 <string notr="true">QFrame{
+	border-radius: 45px;	
+	background-color: qconicalgradient(cx:0.5, cy:0.5, angle:270, stop:0.5 rgba(85,    255, 127, 255), stop:0.499 rgba(255, 255, 255, 255));
+}</string>
+                                </property>
+                                <property name="frameShape">
+                                 <enum>QFrame::NoFrame</enum>
+                                </property>
+                                <property name="frameShadow">
+                                 <enum>QFrame::Raised</enum>
+                                </property>
+                                <layout class="QVBoxLayout" name="verticalLayout_31">
+                                 <property name="leftMargin">
+                                  <number>10</number>
+                                 </property>
+                                 <property name="topMargin">
+                                  <number>10</number>
+                                 </property>
+                                 <property name="rightMargin">
+                                  <number>10</number>
+                                 </property>
+                                 <property name="bottomMargin">
+                                  <number>10</number>
+                                 </property>
+                                 <item>
+                                  <widget class="QFrame" name="circularContainer_7">
+                                   <property name="minimumSize">
+                                    <size>
+                                     <width>70</width>
+                                     <height>70</height>
+                                    </size>
+                                   </property>
+                                   <property name="maximumSize">
+                                    <size>
+                                     <width>70</width>
+                                     <height>70</height>
+                                    </size>
+                                   </property>
+                                   <property name="baseSize">
+                                    <size>
+                                     <width>0</width>
+                                     <height>0</height>
+                                    </size>
+                                   </property>
+                                   <property name="styleSheet">
+                                    <string notr="true">QFrame{
+	border-radius: 35px;	
+	background-color: rgb(45, 45, 45);
+}</string>
+                                   </property>
+                                   <property name="frameShape">
+                                    <enum>QFrame::StyledPanel</enum>
+                                   </property>
+                                   <property name="frameShadow">
+                                    <enum>QFrame::Raised</enum>
+                                   </property>
+                                   <layout class="QVBoxLayout" name="verticalLayout_32">
+                                    <property name="spacing">
+                                     <number>0</number>
+                                    </property>
+                                    <property name="leftMargin">
+                                     <number>10</number>
+                                    </property>
+                                    <property name="topMargin">
+                                     <number>10</number>
+                                    </property>
+                                    <property name="rightMargin">
+                                     <number>10</number>
+                                    </property>
+                                    <property name="bottomMargin">
+                                     <number>10</number>
+                                    </property>
+                                    <item>
+                                     <widget class="QLabel" name="label_9">
+                                      <property name="font">
+                                       <font>
+                                        <family>MS Shell Dlg 2</family>
+                                        <pointsize>12</pointsize>
+                                        <weight>9</weight>
+                                        <italic>false</italic>
+                                        <bold>false</bold>
+                                       </font>
+                                      </property>
+                                      <property name="styleSheet">
+                                       <string notr="true">font: 75 12pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(255, 255, 255);</string>
+                                      </property>
+                                      <property name="text">
+                                       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;DOF6&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                                      </property>
+                                     </widget>
+                                    </item>
+                                    <item>
+                                     <widget class="QLabel" name="labelPercentage6">
+                                      <property name="font">
+                                       <font>
+                                        <family>Roboto Thin</family>
+                                        <pointsize>68</pointsize>
+                                       </font>
+                                      </property>
+                                      <property name="styleSheet">
+                                       <string notr="true">background-color: none;
+color: #FFFFFF</string>
+                                      </property>
+                                      <property name="text">
+                                       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;0°&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                                      </property>
+                                      <property name="alignment">
+                                       <set>Qt::AlignCenter</set>
+                                      </property>
+                                     </widget>
+                                    </item>
+                                   </layout>
+                                  </widget>
+                                 </item>
+                                </layout>
+                               </widget>
+                              </item>
+                             </layout>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QSlider" name="S6">
+                             <property name="styleSheet">
+                              <string notr="true"/>
+                             </property>
+                             <property name="minimum">
+                              <number>-35000</number>
+                             </property>
+                             <property name="maximum">
+                              <number>35000</number>
+                             </property>
+                             <property name="pageStep">
+                              <number>10</number>
+                             </property>
+                             <property name="orientation">
+                              <enum>Qt::Horizontal</enum>
+                             </property>
+                            </widget>
+                           </item>
+                          </layout>
+                         </widget>
+                        </item>
+                       </layout>
+                      </widget>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item alignment="Qt::AlignRight|Qt::AlignBottom">
+     <widget class="QFrame" name="sizegrip">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>10</width>
+        <height>10</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>10</width>
+        <height>10</height>
+       </size>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(253, 253, 0);
+border-radius:3px;</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="Images.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,16 @@
+pyuic5 -x inter.ui -o inter_ui.py
+pyrcc5 Images.qrc -o Images_rc.py
+
+encuesta--docente/estudiantes
+percepcion
+usabilidad
+facil de usar
+se acerca a la realidad?
+es didactica
+percepcion de una maquina
+enseñar engranjes
+trenes de engranajes
+el software es una buena herrmianeta para un aula de clase en mecanica
+
+Opinion--Obervaciones
+

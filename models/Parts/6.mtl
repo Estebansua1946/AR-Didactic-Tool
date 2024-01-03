@@ -1,0 +1,13 @@
+# Blender MTL File: 'FinalBackup.blend'
+# Material Count: 1
+
+newmtl Plate
+Ns 746.007106
+Ka 0.886364 0.886364 0.886364
+Kd 0.190178 0.190178 0.190178
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+map_Kd BAxis1-1.png

@@ -1,0 +1,11 @@
+<RCC>
+  <qresource prefix="Logos">
+    <file>Logos/LogoU.png</file>
+    <file>Logos/LogoU60x60.png</file>
+    <file>Logos/LogoAR.png</file>
+    <file>Logos/OpacityDisabled.png</file>
+    <file>Logos/OpacityEnable.png</file>
+    <file>Logos/robotarmicon.png</file>
+    <file>Logos/rotateicon.png</file>
+  </qresource>
+</RCC>

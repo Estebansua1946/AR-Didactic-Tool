@@ -11,7 +11,7 @@ Este proyecto genero buena impresión en la universidad y al día de hoy la usan
 
 la aplicacion es un ejectuable para windows, el cual nos permite visualizar el despiece en 3D de un brazo robotico industrial.
 
-##Librerias y tecnologias usadas
+## Librerias y tecnologias usadas
 para este proyecto es necesario el uso de las siguentes librerias:
 
 - OpenCV
@@ -40,6 +40,7 @@ la tercera pestaña es para poder visualizar el moviento de los angulos del braz
 ![imagen 4](https://github.com/Estebansua1946/AR-Didactic-Tool/assets/69435188/941693cc-ea50-40c3-a636-e9533841607d)
 
 **Documentos y herramienta**
+
 En el repositorio se encuentra
 
 -  Un archivo zip. con el ejecutable de la herramienta.

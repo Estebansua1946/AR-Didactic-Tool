@@ -44,6 +44,7 @@ la tercera pestaña es para poder visualizar el moviento de los angulos del braz
 En el repositorio se encuentra
 
 -  Un archivo zip. con el ejecutable de la herramienta.
+   https://www.dropbox.com/scl/fi/4m7gbktlkrcmd18ni8f8r/AR-Didactic-Tool-V3.1.rar?rlkey=iqn0n820jqhl7dkmtjy97d8ze&dl=0
 - El documento de proyecto de grado con mas información a detalle y manual de la herramienta.
 - Una imagen de marcador aruco.
 

@@ -1,5 +1,5 @@
-##AR DIDACTIC TOOL
-####Realidad Aumentada con Python
+## AR DIDACTIC TOOL
+####  Realidad Aumentada con Python
 
 ![LogoAR](https://github.com/Estebansua1946/AR-Didactic-Tool/assets/69435188/82719f30-74ef-4c7e-b27d-37e6ef59514d)
 
